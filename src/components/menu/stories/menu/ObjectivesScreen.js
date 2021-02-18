@@ -13,15 +13,13 @@ export default function ObjectivesScreen(props) {
             <List bulleted>
                 {props.main.map((objective) => (
                     <List.Item>{t(objective)}</List.Item>
-                ))
-                }
+                ))}
             </List>
             <Divider/>
             <List bulleted>
                 {props.secondary.map((objective) => (
                     <List.Item>{t(objective)}</List.Item>
-                ))
-                }
+                ))}
             </List>
         </>
     )

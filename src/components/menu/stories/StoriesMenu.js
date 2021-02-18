@@ -7,6 +7,7 @@ import StoryDescription from "./menu/StoryDescription";
 import StoryItem from "./menu/StoryItem";
 import ObjectivesScreen from "./menu/ObjectivesScreen";
 import {constantObjectives} from "../../../constants/stories/objectives/ObjectivesConstant";
+import CharacterScreen from "./menu/CharacterScreen";
 
 
 export default function StoriesMenu() {
@@ -64,12 +65,16 @@ export default function StoriesMenu() {
                                                       confirmColor={'orange'}
                                                       description={t(translations.menu.side.stories.descriptions.heart)}
                                                       objectives={<ObjectivesScreen main={constantObjectives.heart.main}
-                                                                                    secondary={constantObjectives.heart.secondary}/>}/>
+                                                                                    secondary={constantObjectives.heart.secondary}/>}
+                                                      character={<CharacterScreen/>}/>
                                 }
                                 {activeItem === t(translations.menu.side.stories.titles.dagger) &&
                                     <StoryDescription color={'yellow'}
                                                       descColor={'violet'}
-                                                      confirmColor={'brown'}/>
+                                                      confirmColor={'brown'}
+                                                      description={t(translations.menu.side.stories.descriptions.dagger)}
+                                                      objectives={<ObjectivesScreen main={constantObjectives.dagger.main}
+                                                                                    secondary={constantObjectives.dagger.secondary}/>}/>
                                 }
                                 {activeItem === t(translations.menu.side.stories.titles.dream) &&
                                     <StoryDescription color={'grey'}

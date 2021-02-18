@@ -32,7 +32,11 @@
           "mountains": "At the Mountains of Madness"
         },
         "descriptions": {
-          "heart": "Dive into the city of Montreal in year 1922. You were summoned with others to met your old friend, Father O'Connell. Solve a mystery of Saint Curtis and his still beating heart. A heart full of horror, A heart that is still alive after hundreds of years. A heart that is not inside the body anymore."
+          "heart": "Dive into the city of Montreal in year 1922. You were summoned with others to met your old friend, Father O'Connell. Solve a mystery of Saint Curtis and his still beating heart. A heart full of horror, A heart that is still alive after hundreds of years. A heart that is not inside the body anymore.",
+          "dagger": "Discover a mystery hidden behind the god Thoth. Who he really was, is he still exists or it was just a imagination of thousands egyptians. Your soul was corrupted, your friends are by your side by with each day your soul is closer to be erased from the universe. Confront the gods of Egypt or maybe monsters from other worlds. Make a first step into different world, Africa and Egypt.",
+          "dream": "Fog of dreams",
+          "moans": "The moans of the ocean",
+          "mountains": "At the Mountains of Madness"
         },
         "objectives": {
           "heart": {
@@ -44,6 +48,35 @@
             "secondary": {
               "1": "Save the church of Saint Curtis."
             }
+          },
+          "dagger": {
+            "main": {
+              "1": "Find place from your visions.",
+              "2": "Find a solution to save your soul from being erased."
+            },
+            "secondary": {
+              "1": "Decide who is cultist and who is your allay.",
+              "2": "Contact with ghouls asking for help"
+            }
+          }
+        },
+        "character": {
+          "personal": {
+            "age": "Age",
+            "nationality": "Nationality",
+            "gender": "Gender",
+            "place": "Place"
+          },
+          "characteristics": {
+            "str": "Strength",
+            "dex": "Dexterity",
+            "pow": "Power",
+            "con": "Constitution",
+            "app": "Appearance",
+            "edu": "Education",
+            "siz": "Size",
+            "int": "Intelligence",
+            "mr": "Move rate"
           }
         }
       }
