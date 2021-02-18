@@ -25,10 +25,26 @@
       },
       "stories": {
         "titles": {
-          "heart": "Heart of horror",
+          "heart": "Horrors heart",
           "dagger": "Thoth's dagger",
           "dream": "Fog of dreams",
-          "moans": "The moans of the ocean"
+          "moans": "The moans of the ocean",
+          "mountains": "At the Mountains of Madness"
+        },
+        "descriptions": {
+          "heart": "Dive into the city of Montreal in year 1922. You were summoned with others to met your old friend, Father O'Connell. Solve a mystery of Saint Curtis and his still beating heart. A heart full of horror, A heart that is still alive after hundreds of years. A heart that is not inside the body anymore."
+        },
+        "objectives": {
+          "heart": {
+            "main": {
+              "1": "Make decision about the heart.",
+              "2": "Find person responsible for the heart situation.",
+              "3": "Don't let Montreal to fall."
+            },
+            "secondary": {
+              "1": "Save the church of Saint Curtis."
+            }
+          }
         }
       }
     }

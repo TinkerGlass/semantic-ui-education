@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from "react";
-import {Card, CardContent, Container, Grid, Menu, Pagination, Segment, Transition} from "semantic-ui-react";
+import {Container, Grid, Menu, Transition} from "semantic-ui-react";
 import {translations} from "../../../constants/translation/TranslationKeys";
 import {useTranslation} from "react-i18next";
 import "../../../styles/menu/stories/StoriesMenu.css"
 import StoryDescription from "./menu/StoryDescription";
 import StoryItem from "./menu/StoryItem";
+import ObjectivesScreen from "./menu/ObjectivesScreen";
+import {constantObjectives} from "../../../constants/stories/objectives/ObjectivesConstant";
 
 
 export default function StoriesMenu() {
@@ -33,24 +35,56 @@ export default function StoriesMenu() {
                         <Grid.Row stretched columns={4}>
                             <Grid.Column width={2}  height={1}>
                                 <Menu inverted fluid vertical tabular>
-                                    <StoryItem color={'violet'} name={t(translations.menu.side.stories.titles.heart)} active={activeItem} handle={handleItemClick}/>
-                                    <StoryItem color={'yellow'} name={t(translations.menu.side.stories.titles.dagger)} active={activeItem} handle={handleItemClick}/>
-                                    <StoryItem color={'grey'} name={t(translations.menu.side.stories.titles.dream)} active={activeItem} handle={handleItemClick}/>
-                                    <StoryItem color={'blue'} name={t(translations.menu.side.stories.titles.moans)} active={activeItem} handle={handleItemClick}/>
+                                    <StoryItem color={'violet'}
+                                               name={t(translations.menu.side.stories.titles.heart)}
+                                               active={activeItem}
+                                               handle={handleItemClick}/>
+                                    <StoryItem color={'yellow'}
+                                               name={t(translations.menu.side.stories.titles.dagger)}
+                                               active={activeItem}
+                                               handle={handleItemClick}/>
+                                    <StoryItem color={'grey'}
+                                               name={t(translations.menu.side.stories.titles.dream)}
+                                               active={activeItem}
+                                               handle={handleItemClick}/>
+                                    <StoryItem color={'blue'}
+                                               name={t(translations.menu.side.stories.titles.moans)}
+                                               active={activeItem}
+                                               handle={handleItemClick}/>
+                                    <StoryItem color={'grey'}
+                                               name={t(translations.menu.side.stories.titles.mountains)}
+                                               active={activeItem}
+                                               handle={handleItemClick}/>
                                 </Menu>
                             </Grid.Column>
                             <Grid.Column verticalAlign={"middle"} stretched computer={6} largeScreen={6} width={12}>
                                 {activeItem === t(translations.menu.side.stories.titles.heart) &&
-                                    <StoryDescription color={'violet'} descColor={'olive'} confirmColor={'orange'} pages={3}/>
+                                    <StoryDescription color={'violet'}
+                                                      descColor={'olive'}
+                                                      confirmColor={'orange'}
+                                                      description={t(translations.menu.side.stories.descriptions.heart)}
+                                                      objectives={<ObjectivesScreen main={constantObjectives.heart.main}
+                                                                                    secondary={constantObjectives.heart.secondary}/>}/>
                                 }
                                 {activeItem === t(translations.menu.side.stories.titles.dagger) &&
-                                    <StoryDescription color={'yellow'} descColor={'violet'} confirmColor={'brown'} pages={3}/>
+                                    <StoryDescription color={'yellow'}
+                                                      descColor={'violet'}
+                                                      confirmColor={'brown'}/>
                                 }
                                 {activeItem === t(translations.menu.side.stories.titles.dream) &&
-                                    <StoryDescription color={'grey'} descColor={'blue'} confirmColor={'red'} pages={3}/>
+                                    <StoryDescription color={'grey'}
+                                                      descColor={'blue'}
+                                                      confirmColor={'red'}/>
                                 }
                                 {activeItem === t(translations.menu.side.stories.titles.moans) &&
-                                    <StoryDescription color={'blue'} descColor={'orange'} confirmColor={'yellow'} pages={3}/>
+                                    <StoryDescription color={'blue'}
+                                                      descColor={'orange'}
+                                                      confirmColor={'yellow'}/>
+                                }
+                                {activeItem === t(translations.menu.side.stories.titles.mountains) &&
+                                    <StoryDescription color={'grey'}
+                                                      descColor={'violet'}
+                                                      confirmColor={'teal'}/>
                                 }
                             </Grid.Column>
                         </Grid.Row>
