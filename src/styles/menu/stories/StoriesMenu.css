@@ -1,0 +1,14 @@
+.card-content {
+    height: 400px;
+    color: black;
+    align-content: center;
+}
+
+.stories-menu-title {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.pagination {
+    alignment: center;
+}

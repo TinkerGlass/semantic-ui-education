@@ -1,0 +1,11 @@
+.background {
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vh;
+    background-image: url("../images/wall.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}

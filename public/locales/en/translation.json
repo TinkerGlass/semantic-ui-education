@@ -1,0 +1,36 @@
+{
+  "menu": {
+    "main": {
+      "name": "Menu",
+      "stats": "Account statistics",
+      "settings": "Account settings",
+      "game": "game",
+      "side":"Side stories",
+      "story":"Main story"
+    },
+    "story": {
+      "name": "Main story",
+      "continue": "Continue main story",
+      "new": "Start new story"
+    },
+    "side": {
+      "name": "Side stories",
+      "continue": "Continue current story",
+      "new": "Choose new story",
+      "screen": {
+        "description": "Description",
+        "character": "Story character",
+        "objectives": "Story objectives",
+        "begin": "Dive into darkness"
+      },
+      "stories": {
+        "titles": {
+          "heart": "Heart of horror",
+          "dagger": "Thoth's dagger",
+          "dream": "Fog of dreams",
+          "moans": "The moans of the ocean"
+        }
+      }
+    }
+  }
+}
