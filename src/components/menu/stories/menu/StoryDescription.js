@@ -39,55 +39,19 @@ export default function StoryDescription(props) {
             color={props.color}>
             <Card fluid className={'card-content'}>
                 {tab === tabs[0] &&
-                    <>
-                        <CardContent textAlign={'left'}>
-                            {content[activePage-1]}
-                        </CardContent>
-                        <Segment>
-                            <Pagination
-                                className="centered"
-                                activePage={activePage}
-                                onPageChange={onChange}
-                                pointing
-                                secondary
-                                totalPages={props.pages}
-                            />
-                        </Segment>
-                    </>
+                    <CardContent textAlign={'left'}>
+                        {content[activePage-1]}
+                    </CardContent>
                 }
                 {tab === tabs[1] &&
-                <>
                     <CardContent textAlign={'center'}>
                         {content[activePage-1]}
                     </CardContent>
-                    <Segment>
-                        <Pagination
-                            className="centered"
-                            activePage={activePage}
-                            onPageChange={onChange}
-                            pointing
-                            secondary
-                            totalPages={props.pages}
-                        />
-                    </Segment>
-                </>
                 }
                 {tab === tabs[2] &&
-                <>
                     <CardContent textAlign={'right'}>
                         {content[activePage-1]}
                     </CardContent>
-                    <Segment>
-                        <Pagination
-                            className="centered"
-                            activePage={activePage}
-                            onPageChange={onChange}
-                            pointing
-                            secondary
-                            totalPages={props.pages}
-                        />
-                    </Segment>
-                </>
                 }
             </Card>
             <ButtonGroup widths='3'>
