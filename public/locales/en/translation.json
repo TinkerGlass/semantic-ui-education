@@ -65,9 +65,12 @@
             "age": "Age",
             "nationality": "Nationality",
             "gender": "Gender",
-            "place": "Place"
+            "place": "Place",
+            "name": "Name",
+            "surname": "Surname"
           },
           "characteristics": {
+            "title": "Characteristics",
             "str": "Strength",
             "dex": "Dexterity",
             "pow": "Power",
@@ -77,6 +80,16 @@
             "siz": "Size",
             "int": "Intelligence",
             "mr": "Move rate"
+          },
+          "others": {
+            "title": "Others",
+            "hp": "Hit points",
+            "sanity": "Sanity",
+            "luck": "Luck",
+            "mp": "Magic points"
+          },
+          "skills": {
+            "title": "Skills"
           }
         }
       }

@@ -51,8 +51,11 @@ export const translations = {
                         nationality: "menu.side.stories.character.personal.nationality",
                         gender: "menu.side.stories.character.personal.gender",
                         place: "menu.side.stories.character.personal.place",
+                        name: "menu.side.stories.character.personal.name",
+                        surname: "menu.side.stories.character.personal.surname",
                     },
                     characteristics: {
+                        title: "menu.side.stories.character.characteristics.title",
                         str: "menu.side.stories.character.characteristics.str",
                         dex: "menu.side.stories.character.characteristics.dex",
                         pow: "menu.side.stories.character.characteristics.pow",
@@ -62,6 +65,16 @@ export const translations = {
                         siz: "menu.side.stories.character.characteristics.siz",
                         int: "menu.side.stories.character.characteristics.int",
                         mr: "menu.side.stories.character.characteristics.mr"
+                    },
+                    others: {
+                        title: "menu.side.stories.character.others.title",
+                        hp: "menu.side.stories.character.others.hp",
+                        sanity: "menu.side.stories.character.others.sanity",
+                        luck: "menu.side.stories.character.others.luck",
+                        mp: "menu.side.stories.character.others.mp"
+                    },
+                    skills: {
+                        title: "menu.side.stories.character.skills.title",
                     }
                 }
             }

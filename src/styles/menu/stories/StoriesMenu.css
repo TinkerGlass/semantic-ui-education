@@ -1,5 +1,5 @@
 .card-content {
-    height: 400px;
+    height: 420px;
     color: black;
     align-content: center;
 }
@@ -11,4 +11,22 @@
 
 .pagination {
     alignment: center;
+}
+
+.table {
+    height: 100%;
+    overflow: scroll;
+}
+
+tbody {
+    display: block;
+    height: 340px;
+    overflow: auto;
+}
+
+thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed
 }
