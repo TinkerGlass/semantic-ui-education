@@ -24,25 +24,47 @@ export const translations = {
                 begin: "menu.side.screen.begin",
             },
             stories: {
+                parts: {
+                    mid: "menu.side.stories.parts.mid",
+                    nor: "menu.side.stories.parts.nor",
+                    ave: "menu.side.stories.parts.ave",
+                    rei: "menu.side.stories.parts.rei"
+                },
                 titles: {
-                    heart: "menu.side.stories.titles.heart",
+                    wolf: "menu.side.stories.titles.wolf",
                     dagger: "menu.side.stories.titles.dagger",
-                    dream: "menu.side.stories.titles.dream",
-                    moans: "menu.side.stories.titles.moans",
-                    mountains: "menu.side.stories.titles.mountains"
+                    elves: "menu.side.stories.titles.elves",
+                    wine: "menu.side.stories.titles.wine",
+                    emperor: "menu.side.stories.titles.emperor",
+                    continued: "menu.side.stories.titles.continued"
                 },
                 descriptions: {
-                    heart: "menu.side.stories.descriptions.heart",
+                    wolf: "menu.side.stories.descriptions.wolf",
                     dagger: "menu.side.stories.descriptions.dagger",
+                    emperor: "menu.side.stories.descriptions.emperor",
+                    elves: "menu.side.stories.descriptions.elves",
+                    wine: "menu.side.stories.descriptions.wine"
                 },
                 objectives: {
-                    heart: {
-                        main: "menu.side.stories.objectives.heart.main",
-                        secondary: "menu.side.stories.objectives.heart.secondary",
+                    wolf: {
+                        main: "menu.side.stories.objectives.wolf.main",
+                        secondary: "menu.side.stories.objectives.wolf.secondary",
                     },
                     dagger: {
                         main: "menu.side.stories.objectives.dagger.main",
                         secondary: "menu.side.stories.objectives.dagger.secondary",
+                    },
+                    emperor: {
+                        main: "menu.side.stories.objectives.emperor.main",
+                        secondary: "menu.side.stories.objectives.emperor.secondary",
+                    },
+                    elves: {
+                        main: "menu.side.stories.objectives.elves.main",
+                        secondary: "menu.side.stories.objectives.elves.secondary",
+                    },
+                    wine: {
+                        main: "menu.side.stories.objectives.wine.main",
+                        secondary: "menu.side.stories.objectives.wine.secondary",
                     }
                 },
                 character: {
@@ -52,7 +74,7 @@ export const translations = {
                         gender: "menu.side.stories.character.personal.gender",
                         place: "menu.side.stories.character.personal.place",
                         name: "menu.side.stories.character.personal.name",
-                        surname: "menu.side.stories.character.personal.surname",
+                        occupation: "menu.side.stories.character.personal.occupation",
                     },
                     characteristics: {
                         title: "menu.side.stories.character.characteristics.title",

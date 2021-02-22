@@ -14,8 +14,8 @@ export default function MenuPanel(props) {
             <Transition.Group animation={props.transition} duration={props.duration}>
                 {props.visible && (
                     <Menu inverted fluid vertical>
-                        <Menu.Item active={true} color={'violet'} className='header'>{t(translations.menu.side.name).toUpperCase()}</Menu.Item>
-                        <Menu.Item>{t(translations.menu.side.continue).toUpperCase()}</Menu.Item>
+                        <Menu.Item active={true} color={props.color} className='header'>{t(translations.menu.side.name).toUpperCase()}</Menu.Item>
+                        <Menu.Item >{t(translations.menu.side.continue).toUpperCase()}</Menu.Item>
                         <Menu.Item onClick={() => { props.startTransition(urls.stories)}}>{t(translations.menu.side.new).toUpperCase()}</Menu.Item>
                     </Menu>
                 )}

@@ -12,7 +12,7 @@ export default function MenuPanel(props) {
             <Transition.Group animation={props.transition} duration={props.duration}>
                 {props.visible && (
                     <Menu inverted fluid vertical>
-                        <Menu.Item active={true} color={'teal'} className='header'>{t(translations.menu.main.name).toUpperCase()}</Menu.Item>
+                        <Menu.Item active={true} color={props.color} className='header'>{t(translations.menu.main.name).toUpperCase()}</Menu.Item>
                         <Menu.Item color={'teal'}>{t(translations.menu.main.stats).toUpperCase()}</Menu.Item>
                         <Menu.Item color={'teal'}>{t(translations.menu.main.settings).toUpperCase()}</Menu.Item>
                     </Menu>

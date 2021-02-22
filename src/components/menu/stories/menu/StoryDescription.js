@@ -40,31 +40,24 @@ export default function StoryDescription(props) {
                 }
             </Card>
             <ButtonGroup widths='3'>
-                <Button size='small'
-                        inverted
+                <Button size='mini'
                         color={props.descColor}
                         onClick={() => tabChange(0)}>
                     {t(translations.menu.side.screen.description).toUpperCase()}
                 </Button>
-                <Button size='small'
-                        inverted
+                <Button size='mini'
                         color={props.descColor}
                         onClick={() => tabChange(1)}>
                     {t(translations.menu.side.screen.character).toUpperCase()}
                 </Button>
-                <Button size='small'
-                        inverted
+                <Button size='mini'
                         color={props.descColor}
                         onClick={() => tabChange(2)}>
                     {t(translations.menu.side.screen.objectives).toUpperCase()}
                 </Button>
             </ButtonGroup>
             <Divider />
-            <Button fluid
-                    size='small'
-                    inverted
-                    circular
-                    color={props.confirmColor}>
+            <Button fluid size='small' color={props.confirmColor}>
                 {t(translations.menu.side.screen.begin).toUpperCase()}
             </Button>
         </Segment>

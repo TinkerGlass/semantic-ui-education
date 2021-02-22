@@ -28,6 +28,9 @@ const menuKeys = [
 
 const duration = 1000;
 
+const buttonsColor = 'red';
+const menuColor = 'yellow';
+
 export default function MainMenu() {
     const { t } = useTranslation();
     let history = useHistory();
@@ -101,8 +104,8 @@ export default function MainMenu() {
                                 <Grid.Column width={1} height={1}>
                                     <Transition.Group animation={transitions[0]} duration={duration}>
                                         {visible && (
-                                                <Button color='teal'
-                                                        content='Teal'
+                                                <Button color={buttonsColor}
+                                                        content={buttonsColor}
                                                         fluid
                                                         onClick={() => handleMenuTransition('left')}>{t(leftArrow).toUpperCase()}</Button>
                                         )}
@@ -110,20 +113,20 @@ export default function MainMenu() {
                                 </Grid.Column>
                                 <Grid.Column centered textAlign='center'>
                                         {key === 'main' &&
-                                            <MenuPanel transition={translations[1]} duration={duration} visible={visible} startTransition={handleChangeTransition}/>
+                                            <MenuPanel color={menuColor} transition={translations[1]} duration={duration} visible={visible} startTransition={handleChangeTransition}/>
                                         }
                                         {key === 'story' &&
-                                            <StoryPanel transition={translations[1]} duration={duration} visible={visible} startTransition={handleChangeTransition}/>
+                                            <StoryPanel color={menuColor} transition={translations[1]} duration={duration} visible={visible} startTransition={handleChangeTransition}/>
                                         }
                                         {key === 'side' &&
-                                            <SidePanel transition={translations[1]} duration={duration} visible={visible} startTransition={handleChangeTransition}/>
+                                            <SidePanel color={menuColor} transition={translations[1]} duration={duration} visible={visible} startTransition={handleChangeTransition}/>
                                         }
                                 </Grid.Column>
                                 <Grid.Column width={1} height={1}>
                                     <Transition.Group animation={transitions[2]} duration={duration}>
                                         {visible && (
-                                                <Button color='teal'
-                                                        content='Teal'
+                                                <Button color={buttonsColor}
+                                                        content={buttonsColor}
                                                         fluid
                                                         onClick={() => handleMenuTransition('right')}>{t(rightArrow).toUpperCase()}</Button>
                                         )}

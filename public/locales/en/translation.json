@@ -21,42 +21,90 @@
         "description": "Description",
         "character": "Story character",
         "objectives": "Story objectives",
-        "begin": "Dive into darkness"
+        "begin": "For the empire"
       },
       "stories": {
+        "parts": {
+          "mid": "Middenland",
+          "nor": "Nordland",
+          "ave": "Averland",
+          "rei": "Reikland"
+        },
         "titles": {
-          "heart": "Horrors heart",
-          "dagger": "Thoth's dagger",
-          "dream": "Fog of dreams",
-          "moans": "The moans of the ocean",
-          "mountains": "At the Mountains of Madness"
+          "emperor": "In the name of the emperor",
+          "wolf": "Darkness in the snow",
+          "dagger": "North's dagger",
+          "elves": "Elves and Demons",
+          "wine": "The matter of wine",
+          "continued": "New stories soon..."
         },
         "descriptions": {
-          "heart": "Dive into the city of Montreal in year 1922. You were summoned with others to met your old friend, Father O'Connell. Solve a mystery of Saint Curtis and his still beating heart. A heart full of horror, A heart that is still alive after hundreds of years. A heart that is not inside the body anymore.",
-          "dagger": "Discover a mystery hidden behind the god Thoth. Who he really was, is he still exists or it was just a imagination of thousands egyptians. Your soul was corrupted, your friends are by your side by with each day your soul is closer to be erased from the universe. Confront the gods of Egypt or maybe monsters from other worlds. Make a first step into different world, Africa and Egypt.",
-          "dream": "Fog of dreams",
-          "moans": "The moans of the ocean",
-          "mountains": "At the Mountains of Madness"
+          "wolf": "A word has been spread, about the beast with the white fur. It is the myth, about a wolf that will change Middenland once and for all. The Ar-Urlic is creating a group of warriors that will dive into the darkness of Drakwald to search information about the beast. On the other hand, many of witch hunters believe it is not a sign of a change, but a path of the demon. The black hats are start their dance. The struggle between urlykans and witch hunters begins. Choose your side and discover the mystery behind the White Wolf of Middenland",
+          "emperor": "The war is over. Heroes of the Empire won in the battle of Middenheim. Now the Emperor, Karl Franz is returning to his throne in Altdorf. The city is preparing to welcome their ruler. But something dark is still in the undergrounds of the city. After the great war with the Chaos mysteries were released, magic was unleashed. People are disappearing after the sunset, houses are set in fire, and whole families are slaughtered in the sleep. Something bad is hiding in the city, the place where the Emperor is coming back to rest. Witch hunters are all on the far north fighting with what was left from demons armies. Only a single veteran and a novice are near the Altdorf. Will their strength and will be enough to save the citizens of Altdorf and maybe the Emperor itself.",
+          "dagger": "North is a dangerous place. Your party found a dagger on the road from Nordland to Middenheim. Around ith was many bodies of elves, humans and beastmen. The dagger itself was a powerful magic item, but your wizard didn't know how to use it. After the night you were attack by the beasts, next day the situation took place again. The Chaos want the dagger and you are not capable to destroy it. You have four days to Middenheim and only Sigmar knows how many beast are hiding in the Darkwald ready to take the dagger back. The powerful item that you are unable to use and to destroy. Know the race for your life start or maybe you should leave the dagger where you found it. You will decide and maybe, the Fate of the World will be decided too. The dagger is in your hands, what will you do with it?",
+          "elves": "The Witch Hunters are losing. Remaining in Nordland forces are doing what they can to push Chaos armies over the Chaos Sea. Witheld Underschutz is bringing everyone to the Beeckerhoven to lead the last strike. Deciding battle will soon be decided. At the other hand groups of wood elves are fighting theirs own battle. Beastmen are hiding in Laurelorn Forest. Nordland can fall soon and how will it end for elves and Empire? Two nations that are normally enemies now need to cooperate. Divided the citizens of Nordland will fall into darkness of Chaos, together they can create an alliance that will have a chance to destroy the remaining Chaos armies. Your mission is to give the chance for this alliance. Talk to Witheld Underschutz and Aleron Ult'erman and bring them together. Convince them to cooperate and no matter what decisions are made face the armies of Chaos.",
+          "wine": "Averheim is the city of the wine. How good it is to be in the city during the Wine Festival. But what will happen if people will start to kill each other because of the wine taste. How will it change the city. Witch Hunters that dont lost their mind are closing the city. People on the street are attacked by other that were drinking the wine. Collect information, walk into the Averheim and find which wine is changing people. Find who is behind it and help everyone who is still worth saving. At the end the Wine Festival changed into the Blood Festival."
         },
         "objectives": {
-          "heart": {
+          "wolf": {
             "main": {
-              "1": "Make decision about the heart.",
-              "2": "Find person responsible for the heart situation.",
-              "3": "Don't let Montreal to fall."
+              "1": "Decide between Ulricans, Witch Hunters and finding the mystery by yourself.",
+              "2": "Find information about the White Wolf legend.",
+              "3": "Discover what White Wolf really is"
             },
             "secondary": {
-              "1": "Save the church of Saint Curtis."
+              "1": "Stop Urlicans and Witch Hunters before open conflict"
             }
           },
           "dagger": {
             "main": {
-              "1": "Find place from your visions.",
-              "2": "Find a solution to save your soul from being erased."
+              "1": "Decide what to do with dagger.",
+              "2": "(Take) Deliver dagger to Middenheim where he will probably be destroyed.",
+              "3": "(Leave) Deliver dagger to it rightful owner."
             },
             "secondary": {
-              "1": "Decide who is cultist and who is your allay.",
-              "2": "Contact with ghouls asking for help"
+              "1": "Save as many members of your party as you can.",
+              "2": "Found help on the road to Middenheim",
+              "3": "Help people on the road and don't let them be killed be Beastmen"
+            }
+          },
+          "emperor": {
+            "main": {
+              "1": "Discover what is hiding in the darkness of Altdorf.",
+              "2": "Find information about demons.",
+              "3": "Find information about necromancers.",
+              "4": "Discover enemy plan.",
+              "5": "Do everything before the arrival of the Emperor."
+            },
+            "secondary": {
+              "1": "Stop the killing.",
+              "2": "Stop the disappearing.",
+              "3": "Stop the fires."
+            }
+          },
+          "elves": {
+            "main": {
+              "1": "Find Witheld Underschutz and convince him to met with elves.",
+              "2": "Find Aleron Ult'erman and convince him to met with imperial.",
+              "3": "Find place for the meeting.",
+              "4": "Fight with Chaos army in the deciding battle."
+            },
+            "secondary": {
+              "1": "Find elves groups in Laurelon Forest that can help in the batlle.",
+              "2": "Help imperial forces to fallback to the Beeckerhoven.",
+              "3": "Find information about Chaos armies."
+            }
+          },
+          "wine": {
+            "main": {
+              "1": "Find out which wine is changing peoples mind.",
+              "2": "Discover who is responsible for the wine production.",
+              "3": "Save the elector count of Averland"
+            },
+            "secondary": {
+              "1": "Stop Witch Hunters from slaughtering all citizens of Averheim.",
+              "2": "Help Gerthruda Semphauth to leave the city unseen",
+              "3": "Solve the mystery of the disappearing people"
             }
           }
         },
@@ -67,7 +115,7 @@
             "gender": "Gender",
             "place": "Place",
             "name": "Name",
-            "surname": "Surname"
+            "occupation": "Occupation"
           },
           "characteristics": {
             "title": "Characteristics",

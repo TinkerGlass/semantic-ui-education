@@ -11,7 +11,7 @@ export default function StoryPanel(props) {
             <Transition.Group animation={props.transition} duration={props.duration}>
                 {props.visible && (
                     <Menu inverted fluid vertical>
-                        <Menu.Item active={true} color={'red'} className='header'>{t(translations.menu.story.name).toUpperCase()}</Menu.Item>
+                        <Menu.Item active={true} color={props.color} className='header'>{t(translations.menu.story.name).toUpperCase()}</Menu.Item>
                         <Menu.Item>{t(translations.menu.story.continue).toUpperCase()}</Menu.Item>
                         <Menu.Item>{t(translations.menu.story.new).toUpperCase()}</Menu.Item>
                     </Menu>

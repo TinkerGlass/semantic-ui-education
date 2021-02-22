@@ -10,6 +10,7 @@ export default function StoryItem(props) {
         <Menu.Item
             color={props.color}
             name={t(props.name)}
+            disabled={props.disabled}
             active={props.active === props.name}
             onClick={() => props.handle(props.name)}
         />

@@ -10,6 +10,7 @@ export default function ObjectivesScreen(props) {
 
     return (
         <>
+
             <List bulleted>
                 {props.main.map((objective) => (
                     <List.Item>{t(objective)}</List.Item>

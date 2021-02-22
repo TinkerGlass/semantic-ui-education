@@ -32,9 +32,8 @@ export default function CharacterScreen(props) {
                             <Grid.Row width={12}>
                                 <Grid.Column width={8}>
                                     <Message size={"mini"} color={"gray"}>
-                                        <Message.Header>{t(translations.menu.side.stories.character.personal.name)}</Message.Header>
                                         <p>
-                                            Thomas
+                                            Thomas Mourethew
                                         </p>
                                     </Message>
                                     <Message size={"mini"} color={"gray"}>
@@ -52,9 +51,9 @@ export default function CharacterScreen(props) {
                                 </Grid.Column>
                                 <Grid.Column width={8}>
                                     <Message size={"mini"} color={"gray"}>
-                                        <Message.Header>{t(translations.menu.side.stories.character.personal.surname)}</Message.Header>
+                                        <Message.Header>{t(translations.menu.side.stories.character.personal.occupation)}</Message.Header>
                                         <p>
-                                            Mourethew
+                                            Archaeologist
                                         </p>
                                     </Message>
                                     <Message size={"mini"} color={"gray"}>

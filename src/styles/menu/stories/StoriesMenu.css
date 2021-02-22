@@ -5,7 +5,11 @@
 }
 
 .stories-menu-title {
-    color: blueviolet;
+    font-weight: bold;
+}
+
+.stories-menu-item {
+    color: black;
     font-weight: bold;
 }
 
