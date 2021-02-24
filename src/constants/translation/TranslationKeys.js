@@ -70,23 +70,111 @@ export const translations = {
                 character: {
                     personal: {
                         age: "menu.side.stories.character.personal.age",
-                        nationality: "menu.side.stories.character.personal.nationality",
+                        race: "menu.side.stories.character.personal.race",
+                        star: "menu.side.stories.character.personal.star",
                         gender: "menu.side.stories.character.personal.gender",
-                        place: "menu.side.stories.character.personal.place",
+                        birthplace: "menu.side.stories.character.personal.birthplace",
                         name: "menu.side.stories.character.personal.name",
-                        occupation: "menu.side.stories.character.personal.occupation",
+                        profession: "menu.side.stories.character.personal.profession",
+                    },
+                    skills: {
+                        title: "menu.side.stories.character.skills.title",
+                    },
+                    abilities: {
+                        title: "menu.side.stories.character.abilities.title",
+                        descriptions: {
+                            spwSling: "menu.side.stories.character.abilities.descriptions.spwSling",
+                            resDisease: "menu.side.stories.character.abilities.descriptions.resDisease",
+                            resPoison: "menu.side.stories.character.abilities.descriptions.resPoison",
+                            tunnelRat: "menu.side.stories.character.abilities.descriptions.tunnelRat"
+                        }
+                    },
+                    equipment: {
+                        title: "menu.side.stories.character.equipment.title",
+                        weapon: {
+                            name: "menu.side.stories.character.equipment.weapon.name",
+                            enc: "menu.side.stories.character.equipment.weapon.enc",
+                            group: "menu.side.stories.character.equipment.weapon.group",
+                            dmg: "menu.side.stories.character.equipment.weapon.dmg",
+                            qual: "menu.side.stories.character.equipment.weapon.qual"
+                        }
                     },
                     characteristics: {
                         title: "menu.side.stories.character.characteristics.title",
-                        str: "menu.side.stories.character.characteristics.str",
-                        dex: "menu.side.stories.character.characteristics.dex",
-                        pow: "menu.side.stories.character.characteristics.pow",
-                        con: "menu.side.stories.character.characteristics.con",
-                        app: "menu.side.stories.character.characteristics.app",
-                        edu: "menu.side.stories.character.characteristics.edu",
-                        siz: "menu.side.stories.character.characteristics.siz",
-                        int: "menu.side.stories.character.characteristics.int",
-                        mr: "menu.side.stories.character.characteristics.mr"
+                        main: "menu.side.stories.character.characteristics.main",
+                        second: "menu.side.stories.character.characteristics.second",
+                        table: {
+                            main: {
+                                template: "menu.side.stories.character.characteristics.table.main",
+                                description: {
+                                    title: {
+                                        template: "menu.side.stories.character.characteristics.table.main.description.title",
+                                        ws: "menu.side.stories.character.characteristics.table.main.description.title.ws",
+                                        bs: "menu.side.stories.character.characteristics.table.main.description.title.bs",
+                                        s: "menu.side.stories.character.characteristics.table.main.description.title.s",
+                                        t: "menu.side.stories.character.characteristics.table.main.description.title.t",
+                                        ag: "menu.side.stories.character.characteristics.table.main.description.title.ag",
+                                        int: "menu.side.stories.character.characteristics.table.main.description.title.int",
+                                        wp: "menu.side.stories.character.characteristics.table.main.description.title.wp",
+                                        fel: "menu.side.stories.character.characteristics.table.main.description.title.fel"
+                                    },
+                                    specification: {
+                                        template: "menu.side.stories.character.characteristics.table.main.description.specification",
+                                        ws: "menu.side.stories.character.characteristics.table.main.description.specification.ws",
+                                        bs: "menu.side.stories.character.characteristics.table.main.description.specification.bs",
+                                        s: "menu.side.stories.character.characteristics.table.main.description.specification.s",
+                                        t: "menu.side.stories.character.characteristics.table.main.description.specification.t",
+                                        ag: "menu.side.stories.character.characteristics.table.main.description.specification.ag",
+                                        int: "menu.side.stories.character.characteristics.table.main.description.specification.int",
+                                        wp: "menu.side.stories.character.characteristics.table.main.description.specification.wp",
+                                        fel: "menu.side.stories.character.characteristics.table.main.description.specification.fel"
+                                    }
+                                },
+                                ws: "menu.side.stories.character.characteristics.table.main.ws",
+                                bs: "menu.side.stories.character.characteristics.table.main.bs",
+                                s: "menu.side.stories.character.characteristics.table.main.s",
+                                t: "menu.side.stories.character.characteristics.table.main.t",
+                                ag: "menu.side.stories.character.characteristics.table.main.ag",
+                                int: "menu.side.stories.character.characteristics.table.main.int",
+                                wp: "menu.side.stories.character.characteristics.table.main.wp",
+                                fel: "menu.side.stories.character.characteristics.table.main.fel"
+                            },
+                            second: {
+                                template: "menu.side.stories.character.characteristics.table.second",
+                                description: {
+                                    title: {
+                                        template: "menu.side.stories.character.characteristics.table.second.description.title",
+                                        a: "menu.side.stories.character.characteristics.table.second.description.title.a",
+                                        w: "menu.side.stories.character.characteristics.table.second.description.title.w",
+                                        sb: "menu.side.stories.character.characteristics.table.second.description.title.sb",
+                                        tb: "menu.side.stories.character.characteristics.table.second.description.title.tb",
+                                        m: "menu.side.stories.character.characteristics.table.second.description.title.m",
+                                        mag: "menu.side.stories.character.characteristics.table.second.description.title.mag",
+                                        ip: "menu.side.stories.character.characteristics.table.second.description.title.ip",
+                                        fp: "menu.side.stories.character.characteristics.table.second.description.title.fp"
+                                    },
+                                    specification: {
+                                        template: "menu.side.stories.character.characteristics.table.second.description.specification",
+                                        a: "menu.side.stories.character.characteristics.table.second.description.specification.a",
+                                        w: "menu.side.stories.character.characteristics.table.second.description.specification.w",
+                                        sb: "menu.side.stories.character.characteristics.table.second.description.specification.sb",
+                                        tb: "menu.side.stories.character.characteristics.table.second.description.specification.tb",
+                                        m: "menu.side.stories.character.characteristics.table.second.description.specification.m",
+                                        mag: "menu.side.stories.character.characteristics.table.second.description.specification.mag",
+                                        ip: "menu.side.stories.character.characteristics.table.second.description.specification.ip",
+                                        fp: "menu.side.stories.character.characteristics.table.second.description.specification.fp"
+                                    }
+                                },
+                                a: "menu.side.stories.character.characteristics.table.second.a",
+                                w: "menu.side.stories.character.characteristics.table.second.w",
+                                sb: "menu.side.stories.character.characteristics.table.second.sb",
+                                tb: "menu.side.stories.character.characteristics.table.second.tb",
+                                m: "menu.side.stories.character.characteristics.table.second.m",
+                                mag: "menu.side.stories.character.characteristics.table.second.mag",
+                                ip: "menu.side.stories.character.characteristics.table.second.ip",
+                                fp: "menu.side.stories.character.characteristics.table.second.fp"
+                            }
+                        }
                     },
                     others: {
                         title: "menu.side.stories.character.others.title",
@@ -94,9 +182,6 @@ export const translations = {
                         sanity: "menu.side.stories.character.others.sanity",
                         luck: "menu.side.stories.character.others.luck",
                         mp: "menu.side.stories.character.others.mp"
-                    },
-                    skills: {
-                        title: "menu.side.stories.character.skills.title",
                     }
                 }
             }

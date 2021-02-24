@@ -63,15 +63,15 @@ export default function StoriesMenu() {
                                                       confirmColor={'yellow'}
                                                       description={t(translations.menu.side.stories.descriptions.emperor)}
                                                       objectives={<ObjectivesScreen main={constantObjectives.emperor.main}
-                                                                                    secondary={constantObjectives.emperor.secondary}/>}/>
+                                                                                    secondary={constantObjectives.emperor.secondary}/>}
+                                                      character={<CharacterScreen/>}/>
                                 }
                                 {activeItem === t(translations.menu.side.stories.titles.wolf) &&
                                     <StoryDescription color={'teal'}
                                                       confirmColor={'yellow'}
                                                       description={t(translations.menu.side.stories.descriptions.wolf)}
                                                       objectives={<ObjectivesScreen main={constantObjectives.wolf.main}
-                                                                                    secondary={constantObjectives.wolf.secondary}/>}
-                                                      character={<CharacterScreen/>}/>
+                                                                                    secondary={constantObjectives.wolf.secondary}/>}/>
                                 }
                                 {activeItem === t(translations.menu.side.stories.titles.dagger) &&
                                     <StoryDescription color={'teal'}

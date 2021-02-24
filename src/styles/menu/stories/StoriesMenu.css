@@ -1,5 +1,5 @@
 .card-content {
-    height: 420px;
+    height: 490px;
     color: black;
     align-content: center;
 }
@@ -22,14 +22,13 @@
     overflow: scroll;
 }
 
-tbody {
+.abilities-table-body{
     display: block;
-    height: 340px;
+    height: 403px;
     overflow: auto;
 }
 
-thead,
-tbody tr {
+.abilities-table-row{
     display: table;
     width: 100%;
     table-layout: fixed

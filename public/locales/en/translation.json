@@ -111,23 +111,121 @@
         "character": {
           "personal": {
             "age": "Age",
-            "nationality": "Nationality",
+            "race": "Race",
+            "star": "Star sign",
             "gender": "Gender",
-            "place": "Place",
+            "birthplace": "Birthplace",
             "name": "Name",
-            "occupation": "Occupation"
+            "profession": "Profession"
+          },
+          "skills": {
+            "title": "Skills"
+          },
+          "abilities": {
+            "title": "Talents",
+            "descriptions": {
+              "spwSling": "You know how to use a group of weapons tha require special training. You don't get a penalty to use Sling.",
+              "resDisease": "Your constitution allows you to shrug off many diseases. You gain a +10% bonus on Toughness Tests to resist diseases",
+              "resPoison": "Your hardiness allows you to ignore the effects of many poisons. You gain a +10% bonus on Toughness Tests to resist poison",
+              "tunnelRat": "You are at home beneath the earth. You gain+10% bonus on Concealment and Silent Move Skill Tests when in underground locations."
+            }
+          },
+          "equipment": {
+            "title": "Equipment",
+            "weapon": {
+              "name": "Name",
+              "enc": "Enc",
+              "group": "Group",
+              "dmg": "Dmg",
+              "qual": "Qualities",
+              "qualities": {
+                "AP": "",
+                "B": "",
+                "D": "",
+                "E": "",
+                "F": "",
+                "I": "",
+                "Pr": "",
+                "Pu": "",
+                "Sh": "",
+                "Sl": "",
+                "Sn": "",
+                "Sp": "",
+                "T": "",
+                "U": ""
+              }
+            }
           },
           "characteristics": {
             "title": "Characteristics",
-            "str": "Strength",
-            "dex": "Dexterity",
-            "pow": "Power",
-            "con": "Constitution",
-            "app": "Appearance",
-            "edu": "Education",
-            "siz": "Size",
-            "int": "Intelligence",
-            "mr": "Move rate"
+            "main": "Main",
+            "second": "Secondary",
+            "table": {
+              "main": {
+                "description": {
+                  "title": {
+                    "ws": "Weapon Skills",
+                    "bs": "Ballistic Skills",
+                    "s": "Strength",
+                    "t": "Toughness",
+                    "ag": "Agility",
+                    "int": "Intelligence",
+                    "wp": "Will Power",
+                    "fel": "Fellowship"
+                  },
+                  "specification": {
+                    "ws": "Describes how good you are in close combat. Same with bare hands and with white weapon.",
+                    "bs": "Describes how good you are in range combat. How good you are in using bows, crossbows and guns.",
+                    "s": "Describes how physically good you are. How strong your body is.",
+                    "t": "Describes how high is your resistance for wounds effects, poisons and diseases.",
+                    "ag": "Describes how fast you reacting and how good you are with manual problems",
+                    "int": "Describes how intelligent you are, how good toy are in reasoning things and remembering things.",
+                    "wp": "Describes how powerful is your will, how much you can take before mental break.",
+                    "fel": "Describes your charisma, how good you are in interpersonal contacts."
+                  }
+                },
+                "ws": "WS",
+                "bs": "BS",
+                "s": "S",
+                "t": "T",
+                "ag": "AG",
+                "int": "INT",
+                "wp": "WP",
+                "fel": "FEL"
+              },
+              "second": {
+                "description": {
+                  "title": {
+                    "a": "Attacks",
+                    "w": "Wounds",
+                    "sb": "Strength Bonus",
+                    "tb": "Toughness Bonus",
+                    "m": "Movement",
+                    "mag": "Magic",
+                    "ip": "Insanity Points",
+                    "fp": "Fate Points"
+                  },
+                  "specification": {
+                    "a": "A",
+                    "w": "W",
+                    "sb": "SB",
+                    "tb": "TB",
+                    "m": "M",
+                    "mag": "MAG",
+                    "ip": "IP",
+                    "fp": "FP"
+                  }
+                },
+                "a": "A",
+                "w": "W",
+                "sb": "SB",
+                "tb": "TB",
+                "m": "M",
+                "mag": "MAG",
+                "ip": "IP",
+                "fp": "FP"
+              }
+            }
           },
           "others": {
             "title": "Others",
@@ -135,9 +233,6 @@
             "sanity": "Sanity",
             "luck": "Luck",
             "mp": "Magic points"
-          },
-          "skills": {
-            "title": "Skills"
           }
         }
       }
