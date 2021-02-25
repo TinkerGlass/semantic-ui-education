@@ -1,5 +1,5 @@
 import {Header, Popup, Table} from "semantic-ui-react";
-import React from "react";
+import React, {useState} from "react";
 import {translations} from "../../../../../constants/translation/TranslationKeys";
 import {useTranslation} from "react-i18next";
 
@@ -7,13 +7,19 @@ import {useTranslation} from "react-i18next";
 export default function QualitiesPopup(props) {
     const { t } = useTranslation();
 
-    const qualTrans = (qual) => {
-        let qualities = qual.split(',');
-        let translation = '';
-        for (let i = 0; i < qualities.length; i++){
-            translation +=
-        }
-    };
+    const [qualities, setQ] = useState(props.qual.split(','));
+
+    const GenerateInfo = () => (
+        qualities.map(quality => {
+            return <>
+                <Header as='h1'>{t(translations.menu.side.stories.character.equipment.weapon.qualities.header + "." + quality)}</Header>
+                <p>
+                    {t(translations.menu.side.stories.character.equipment.weapon.qualities.description + "." + quality)}
+                </p>
+            </>
+        }));
+
+
 
     return(
         <>
@@ -23,10 +29,7 @@ export default function QualitiesPopup(props) {
                     <Table.Cell>{props.qual}</Table.Cell>
                 }
             >
-                <Header as='h1'>{props.name}</Header>
-                <p>
-                    {qualTrans()}
-                </p>
+                <GenerateInfo />
             </Popup>
         </>
     )

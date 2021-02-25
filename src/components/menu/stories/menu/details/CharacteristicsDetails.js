@@ -23,7 +23,7 @@ export default function CharacteristicsDetails() {
     };
 
     return(
-        <Grid.Row>
+        <Grid.Row className={'equipment'}>
             <Grid.Column width={7}>
                 <Image src='https://react.semantic-ui.com/images/wireframe/image.png' size={'small'}/>
                 <CharacterTile size={'mini'} color={'gray'} value={'Otto Vigerschutz'}/>

@@ -1,5 +1,5 @@
 .card-content {
-    height: 490px;
+    height: 520px;
     color: black;
     align-content: center;
 }
@@ -22,13 +22,22 @@
     overflow: scroll;
 }
 
-.abilities-table-body{
+.equipment {
+    height: 465px;
+}
+
+.abilities-table-body {
     display: block;
-    height: 403px;
+    height: 435px;
+    overflow: auto;
+}
+.equipment-table-body {
+    display: block;
+    height: 160px;
     overflow: auto;
 }
 
-.abilities-table-row{
+.abilities-table-row {
     display: table;
     width: 100%;
     table-layout: fixed

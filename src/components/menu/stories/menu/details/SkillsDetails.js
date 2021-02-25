@@ -22,10 +22,10 @@ export default function SkillsDetails(props) {
 
     return(
         <>
-            <Grid.Row>
+            <Grid.Row className={'equipment'}>
                 <Grid.Column verticalAlign width={16}>
                     <Table celled selectable role="grid">
-                        <Table.Body className={'abilities-table-body'} onScroll={() => console.log("scroll")}>
+                        <Table.Body className={'abilities-table-body'}>
                             {props.skills.map(({name, learned, bonus, ...rest}) => (
                                 <Table.Row className={'abilities-table-row'} style={{ cursor: "pointer" }}>
                                     <Table.Cell textAlign='center'>

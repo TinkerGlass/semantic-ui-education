@@ -91,12 +91,46 @@ export const translations = {
                     },
                     equipment: {
                         title: "menu.side.stories.character.equipment.title",
+                        armor: {
+                            value: "menu.side.stories.character.equipment.armor.value",
+                            type: "menu.side.stories.character.equipment.armor",
+                            head: {
+                                name: "menu.side.stories.character.equipment.armor.head.name"
+                            },
+                            arm: {
+                                left: "menu.side.stories.character.equipment.armor.arm.left",
+                                right: "menu.side.stories.character.equipment.armor.arm.right"
+                            },
+                            body: {
+                                name: "menu.side.stories.character.equipment.armor.body.name"
+                            },
+                            leg: {
+                                left: "menu.side.stories.character.equipment.armor.leg.left",
+                                right: "menu.side.stories.character.equipment.armor.leg.right"
+                            }
+                        },
+                        money:{
+                            name: "menu.side.stories.character.equipment.money.name",
+                            gold: "menu.side.stories.character.equipment.money.gold",
+                            silver: "menu.side.stories.character.equipment.money.silver",
+                            brass: "menu.side.stories.character.equipment.money.brass"
+                        },
+                        other: "menu.side.stories.character.equipment.other",
                         weapon: {
+                            hand: {
+                                right: "menu.side.stories.character.equipment.weapon.hand.right",
+                                left: "menu.side.stories.character.equipment.weapon.hand.left"
+                            },
                             name: "menu.side.stories.character.equipment.weapon.name",
                             enc: "menu.side.stories.character.equipment.weapon.enc",
                             group: "menu.side.stories.character.equipment.weapon.group",
                             dmg: "menu.side.stories.character.equipment.weapon.dmg",
-                            qual: "menu.side.stories.character.equipment.weapon.qual"
+                            qual: "menu.side.stories.character.equipment.weapon.qual",
+                            qualities: {
+                                header: "menu.side.stories.character.equipment.weapon.qualities.header",
+                                description: "menu.side.stories.character.equipment.weapon.qualities.description"
+                            }
+
                         }
                     },
                     characteristics: {

@@ -132,27 +132,101 @@
           },
           "equipment": {
             "title": "Equipment",
+            "armor": {
+              "value": "Armor Points",
+              "leather": {
+                "skullcap": "Leather Skullcap",
+                "jerkin": "Leather Jerkin",
+                "jack": "Leather Jack",
+                "leggings": "Leather Leggings"
+              },
+              "chain": {
+                "mailCoif": "Mail Coif",
+                "mailShirt": "Mail Shirt",
+                "sleevedMailShirt": "Sleeved Mail Shirt",
+                "mailCoat": "Mail Coat",
+                "sleevedMailCoat": "Sleeved Mail Coat",
+                "mailLeggings": "Mail Leggings"
+              },
+              "none": {
+                "none": "None armor"
+              },
+              "head": {
+                "name": "Head"
+              },
+              "arm": {
+                "left": "Left Arm",
+                "right": "Right Arm"
+              },
+              "body": {
+                "name": "Body"
+              },
+              "leg": {
+                "left": "Left Leg",
+                "right": "Right Leg"
+              }
+            },
+            "money": {
+              "name": "Money",
+              "gold": "Gold",
+              "silver": "Silver",
+              "brass": "Brass"
+            },
+            "other": {
+              "blanket": {
+                "short": "Material to cover yourself during the night.",
+                "long": "For those who need a bit more than a travel-stained cloak for warmth in the wilderness, there are blankets."
+              },
+              "tinderbox": {
+                "short": "Box with simple tools.",
+                "long": "This small box holds curls of wood shavings and other flammables and comes equipped with pieces of flint and steel to generate the spark. A tinderbox has enough tinder to light six fires, though you can easily refill it provided supplies are on hand."
+              }
+            },
             "weapon": {
+              "hand": {
+                "right": "Right Hand",
+                "left": "Left Hand"
+              },
               "name": "Name",
               "enc": "Enc",
               "group": "Group",
               "dmg": "Dmg",
               "qual": "Qualities",
               "qualities": {
-                "AP": "",
-                "B": "",
-                "D": "",
-                "E": "",
-                "F": "",
-                "I": "",
-                "Pr": "",
-                "Pu": "",
-                "Sh": "",
-                "Sl": "",
-                "Sn": "",
-                "Sp": "",
-                "T": "",
-                "U": ""
+                "header": {
+                  "AP": "Armor Piercing",
+                  "B": "Balanced",
+                  "D": "Defensive",
+                  "E": "Experimental",
+                  "F": "Fast",
+                  "I": "Impact",
+                  "Pr": "Precise",
+                  "Pu": "Pummeling",
+                  "Sh": "Shrapnel",
+                  "Sl": "Slow",
+                  "Sn": "Snare",
+                  "Sp": "Special",
+                  "T": "Tiring",
+                  "U": "Unreliable",
+                  "None": "None"
+                },
+                "description": {
+                  "AP": "Attacks from Armour Piercing weapons ignore 1 Armour Point. If a target has no armour this quality has no effect.",
+                  "B": "Weapons with this quality are designed to be used in your secondary hand. When wielding a Balanced weapon in your secondary hand, you don;t suffer the normal -20% penalty to your Weapon Skill.",
+                  "D": "Weapons with this quality  are designed with parrying in mind. You gain a +10% bonus on parry attempts while wielding a Defensive weapon.",
+                  "E": "On an attack with score 96-98, the weapon jams and cannot be fire again until a successful (Gunsmith) Test Skill. On attack score 99-100 the weapon explodes inflicting 8 wounds on the wielder and destroying itself in the process.",
+                  "F": "Enemies attacked with this kind of weapon suffer 10% penalty to parrying and dodging.",
+                  "I": "Using Impact weapon gives you chance to use 2d10 dice to get a damage score, use the higher of this two.",
+                  "Pr": "This quality gives weapon a plus one bonus to the critical hit value.",
+                  "Pu": "Weapon with this quality is perfect for stun enemies, you gain +10% bonus to Strength when using Strike to Stun actions.",
+                  "Sh": "To use this kind of weapon you dont need to make Ballistic Skill Test. Everyone in weapon range must make Agility Test, if the score is failure the person take weapon damage.",
+                  "Sl": "Enemies attacked with this kind of weapon gain 10% bonus to parrying and dodging",
+                  "Sn": "Weapons with this qualities can entangle enemies. Entangled enemies can only try to escape with Strength Test or Agility Test. Attacks against entangled enemies have +20% bonus.",
+                  "Sp": "Special description has it own rules.",
+                  "T": "You can use two d10 dice to roll damage in first attack against enemy and choose the better score.",
+                  "U": "On attack roll of 96-99 weapon jams and cannot be fire again until a successful (Gunsmith) Skill Test. On attack roll of 100 the weapon explodes inflicting its normal damage on the wielder and destroying itself in the process",
+                  "None": "Weapon dont have any special quality."
+                }
               }
             }
           },

@@ -6,7 +6,7 @@ export default function TalentsDetails(props) {
 
     return(
         <>
-            <Grid.Row>
+            <Grid.Row className={'equipment'}>
                 <Grid.Column verticalAlign width={16}>
                     <Table celled selectable role="grid">
                         <Table.Body className={'abilities-table-body'} onScroll={() => console.log("scroll")}>

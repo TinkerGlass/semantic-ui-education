@@ -57,7 +57,7 @@ export default function StoriesMenu() {
                                     <Menu.Item className='header'>{t(translations.menu.side.stories.titles.continued).toUpperCase()}</Menu.Item>
                                 </Menu>
                             </Grid.Column>
-                            <Grid.Column verticalAlign={"middle"} stretched computer={6} largeScreen={6} width={12}>
+                            <Grid.Column verticalAlign={"middle"} stretched computer={6} largeScreen={6} mobile={6} tablet={6} widescreen={6} width={12}>
                                 {activeItem === t(translations.menu.side.stories.titles.emperor) &&
                                     <StoryDescription color={'red'}
                                                       confirmColor={'yellow'}
