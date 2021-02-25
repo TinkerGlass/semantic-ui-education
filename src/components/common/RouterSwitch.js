@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom
 import {urls} from "../../constants/router/Urls";
 import MainMenu from "../menu/MainMenu";
 import StoriesMenu from "../menu/stories/StoriesMenu";
+import MainStoryMenu from "../menu/main/new/MainStoryMenu";
 
 export default function RouterSwitch() {
 
@@ -14,6 +15,9 @@ export default function RouterSwitch() {
                 </Route>
                 <Route exact path={urls.stories}>
                     <StoriesMenu/>
+                </Route>
+                <Route exact path={urls.main}>
+                    <MainStoryMenu/>
                 </Route>
 
                 <Route path="/">

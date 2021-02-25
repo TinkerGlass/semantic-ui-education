@@ -1,5 +1,6 @@
 .card-content {
     height: 520px;
+    min-height: 520px;
     color: black;
     align-content: center;
 }

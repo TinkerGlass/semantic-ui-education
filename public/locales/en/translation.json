@@ -11,7 +11,7 @@
     "story": {
       "name": "Main story",
       "continue": "Continue main story",
-      "new": "Start new story"
+      "new": "New story"
     },
     "side": {
       "name": "Side stories",
