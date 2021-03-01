@@ -6,6 +6,11 @@
     align-content: center;
 }
 
+.creator-card {
+    height: 500px;
+    color: black;
+}
+
 .gender-buttons {
     height: 90px;
     background-color: green;
@@ -14,4 +19,8 @@
 .bottom-panel {
     height: 50px;
     text-align: center;
+}
+
+.race-panel {
+    height: 450px;
 }

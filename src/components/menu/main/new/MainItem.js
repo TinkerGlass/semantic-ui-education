@@ -1,5 +1,5 @@
 import {useTranslation} from "react-i18next";
-import {Header, Menu, Popup, Table} from "semantic-ui-react";
+import {Header, Menu, Popup} from "semantic-ui-react";
 import React from "react";
 import {translations} from "../../../../constants/translation/TranslationKeys";
 
@@ -9,6 +9,7 @@ export default function MainItem(props) {
     return(
         <Popup
             on='hover'
+            position='top center'
             trigger={
                 <Menu.Item
                     color={props.color}

@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from "react";
-import {Button, Container, Grid, Menu, Message, Segment, Transition} from "semantic-ui-react";
+import {Container, Grid, Menu, Message, Transition} from "semantic-ui-react";
 import {useTranslation} from "react-i18next";
 import MainItem from "./MainItem";
 import {tabs} from "../../../../constants/main/MenuTabs";
 import GenderTab from "./character/creator/GenderTab";
 import "../../../../styles/menu/main/MainPlotMenu.css"
 import RaceTab from "./character/creator/RaceTab";
+import AppearanceTab from "./character/creator/AppearanceTab";
 
 const characterTemplate = {
     gender: undefined,
@@ -51,10 +52,9 @@ export default function MainStoryMenu() {
         setTalents(!(num >= 8));
     };
 
-    const setCharacterGender = (gender, tab) => {
-        console.log(tab);
+    const setCharacterProperty = (type, gender, tab) => {
         let helpCharacter = character;
-        helpCharacter.gender = gender;
+        helpCharacter[type] = gender;
         setCharacter(helpCharacter);
         openTab(tab.number);
         setActiveItem(tab.name);
@@ -71,7 +71,7 @@ export default function MainStoryMenu() {
                 <Container fluid>
                     <Grid columns={3} centered>
                         <Grid.Row columns={4}>
-                            <Grid.Column width={12} textAlign={"center"} className={'stories-menu-title'}>
+                            <Grid.Column width={10} textAlign={"center"} className={'stories-menu-title'}>
                                 <Menu inverted widths={8}>
                                     <MainItem disabled={gender} icon={<i className="venus mars icon"/>} color={'red'} active={activeItem} handle={handleItemClick} tab={tabs[0]}/>
                                     <MainItem disabled={race} icon={<i className="user circle outline icon"/>} color={'orange'} active={activeItem} handle={handleItemClick} tab={tabs[1]}/>
@@ -82,44 +82,73 @@ export default function MainStoryMenu() {
                                     <MainItem disabled={skills} icon={<i className="book icon"/>} color={'purple'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[6]}/>
                                     <MainItem disabled={talents} icon={<i className="file alternate outline icon"/>} color={'pink'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[7]}/>
                                 </Menu>
-                                <Segment attached='bottom'>
+                                <Grid columns={3} centered>
                                     {activeItem === tabs[0].name &&
-                                        <GenderTab tab={tabs[1]} handleDecision={setCharacterGender}/>
+                                    <Grid.Column width={16} textAlign={"center"} className={'stories-menu-title'}>
+                                        <GenderTab gender={character.gender} tab={tabs[1]} handleDecision={setCharacterProperty}/>
+                                    </Grid.Column>
                                     }
                                     {activeItem === tabs[1].name &&
-                                        <RaceTab/>
+                                    <Grid.Column width={16} textAlign={"center"} className={'stories-menu-title'}>
+                                        <RaceTab race={character.race} tab={tabs[2]} handleDecision={setCharacterProperty}/>
+                                    </Grid.Column>
                                     }
                                     {activeItem === tabs[2].name &&
-                                    <Button size='mini' onClick={() => openTab(tabs[3].number)}>
-                                        OKEJ
-                                    </Button>
+                                    <Grid.Column width={16} textAlign={"center"} className={'stories-menu-title'}>
+                                        <AppearanceTab/>
+                                    </Grid.Column>
+
                                     }
-                                    {activeItem === tabs[3].name &&
-                                    <Button size='mini' onClick={() => openTab(tabs[4].number)}>
-                                        OKEJ
-                                    </Button>
-                                    }
-                                    {activeItem === tabs[4].name &&
-                                    <Button size='mini' onClick={() => openTab(tabs[5].number)}>
-                                        OKEJ
-                                    </Button>
-                                    }
-                                    {activeItem === tabs[5].name &&
-                                    <Button size='mini' onClick={() => openTab(tabs[6].number)}>
-                                        OKEJ
-                                    </Button>
-                                    }
-                                    {activeItem === tabs[6].name &&
-                                    <Button size='mini' onClick={() => openTab(tabs[7].number)}>
-                                        OKEJ
-                                    </Button>
-                                    }
-                                    {activeItem === tabs[7].name &&
-                                    <Button size='mini'>
-                                        DALEj
-                                    </Button>
-                                    }
-                                </Segment>
+                                    {/*<Grid.Column width={10} textAlign={"center"} className={'stories-menu-title'}>*/}
+                                    {/*    <Segment>*/}
+                                    {/*        {activeItem === tabs[0].name &&*/}
+                                    {/*        <GenderTab tab={tabs[1]} handleDecision={setCharacterGender}/>*/}
+                                    {/*        }*/}
+                                    {/*        {activeItem === tabs[1].name &&*/}
+                                    {/*        <RaceTab/>*/}
+                                    {/*        }*/}
+                                    {/*        {activeItem === tabs[2].name &&*/}
+                                    {/*        <Button size='mini' onClick={() => openTab(tabs[3].number)}>*/}
+                                    {/*            OKEJ*/}
+                                    {/*        </Button>*/}
+                                    {/*        }*/}
+                                    {/*        {activeItem === tabs[3].name &&*/}
+                                    {/*        <Button size='mini' onClick={() => openTab(tabs[4].number)}>*/}
+                                    {/*            OKEJ*/}
+                                    {/*        </Button>*/}
+                                    {/*        }*/}
+                                    {/*        {activeItem === tabs[4].name &&*/}
+                                    {/*        <Button size='mini' onClick={() => openTab(tabs[5].number)}>*/}
+                                    {/*            OKEJ*/}
+                                    {/*        </Button>*/}
+                                    {/*        }*/}
+                                    {/*        {activeItem === tabs[5].name &&*/}
+                                    {/*        <Button size='mini' onClick={() => openTab(tabs[6].number)}>*/}
+                                    {/*            OKEJ*/}
+                                    {/*        </Button>*/}
+                                    {/*        }*/}
+                                    {/*        {activeItem === tabs[6].name &&*/}
+                                    {/*        <Button size='mini' onClick={() => openTab(tabs[7].number)}>*/}
+                                    {/*            OKEJ*/}
+                                    {/*        </Button>*/}
+                                    {/*        }*/}
+                                    {/*        {activeItem === tabs[7].name &&*/}
+                                    {/*        <Button size='mini'>*/}
+                                    {/*            DALEj*/}
+                                    {/*        </Button>*/}
+                                    {/*        }*/}
+                                    {/*    </Segment>*/}
+                                    {/*</Grid.Column>*/}
+                                    {/*<Grid.Column width={6} textAlign={"center"} className={'stories-menu-title'}>*/}
+                                    {/*    <Card fluid className={'creator-card'}>*/}
+                                    {/*        <Card.Content textAlign={'left'}>*/}
+                                    {/*            {activeItem === tabs[0].name &&*/}
+                                    {/*            <GenderTab tab={tabs[1]} handleDecision={setCharacterGender}/>*/}
+                                    {/*            }*/}
+                                    {/*        </Card.Content>*/}
+                                    {/*    </Card>*/}
+                                    {/*</Grid.Column>*/}
+                                </Grid>
                                 <Grid>
                                     <Grid.Row columns={8} className={'bottom-panel'}>
                                         <Transition.Group animation={'fade down'} duration={1200}>
@@ -131,13 +160,15 @@ export default function MainStoryMenu() {
                                             </Grid.Column>
                                             }
                                         </Transition.Group>
-                                        {character.race &&
-                                        <Grid.Column>
-                                            <Message>
-                                                {character.race}
-                                            </Message>
-                                        </Grid.Column>
-                                        }
+                                        <Transition.Group animation={'fade down'} duration={1200}>
+                                            {character.race &&
+                                            <Grid.Column>
+                                                <Message color={'orange'}>
+                                                    {character.race}
+                                                </Message>
+                                            </Grid.Column>
+                                            }
+                                        </Transition.Group>
                                         {character.appearance &&
                                         <Grid.Column>
                                             <Message>

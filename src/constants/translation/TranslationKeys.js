@@ -10,7 +10,19 @@ export const translations = {
             character: {
                 creator:{
                     tabs: "menu.main.character.creator.tabs",
-                    gender: "menu.main.character.creator.gender"
+                    gender: "menu.main.character.creator.gender",
+                    race: {
+                        name:{
+                            dwarf: "menu.main.character.creator.race.name.dwarf",
+                            elf: "menu.main.character.creator.race.name.elf",
+                            halfling: "menu.main.character.creator.race.name.halfling",
+                            human: "menu.main.character.creator.race.name.human"
+                        },
+                        description:{
+                            name: "menu.main.character.creator.race.description.name",
+                            default: "menu.main.character.creator.race.description"
+                        }
+                    }
                 }
             }
         },

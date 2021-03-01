@@ -10,8 +10,9 @@ export default function GenderSegmentPopup(props) {
     return(
         <Popup
             on='hover'
+            position='top center'
             trigger={
-                <Button basic color={props.color} size='massive' content={props.icon} fluid onClick={() => props.handle(props.gender, props.tab)}/>
+                <Button inverted color={props.color} size='massive' content={props.icon} fluid onClick={() => props.handle(props.gender)}/>
             }
         >
             <Header as='h4'>{t(translations.menu.main.character.creator.gender + '.name.' + props.gender)}</Header>

@@ -25,8 +25,23 @@
               "male": "Male"
             },
             "description": {
-              "female": "In eyes od many you will be considered as an insane woman. Many will look at you thinking that you should stay at home to raise children and cook dinners. But you decided to become something more, maybe even the strongest of all a hero of the old world.",
+              "female": "In eyes of many you will be considered as an insane woman. Many will look at you thinking that you should stay at home to raise children and cook dinners. But you decided to become something more, maybe even the strongest of all a hero of the old world.",
               "male": "Create your own path. You are a simple person, you should stay at home, gain money, find wife and live to the end of your days. But maybe with a little of luck you will become a hero of the empire. Just take a step and find what fortune will brings to you."
+            }
+          },
+          "race": {
+            "name": {
+              "dwarf": "Dwarfs",
+              "elf": "Elves",
+              "halfling": "Halflings",
+              "human": "Humans"
+            },
+            "description": {
+              "name": "Description",
+              "dwarf": "Dwarfs",
+              "elf": "Elves",
+              "halfling": "Halflings",
+              "human": "Humans"
             }
           }
         }
