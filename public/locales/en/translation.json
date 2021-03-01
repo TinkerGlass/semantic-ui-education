@@ -6,7 +6,19 @@
       "settings": "Account settings",
       "game": "game",
       "side":"Side stories",
-      "story":"Main story"
+      "story":"Main story",
+      "character": {
+        "creator": {
+          "gender": "Gender",
+          "race": "Race",
+          "appearance": "Appearance",
+          "origins": "Origins",
+          "profession": "Profession",
+          "characteristics": "Characteristics",
+          "skills": "Skills",
+          "talents": "Talents"
+        }
+      }
     },
     "story": {
       "name": "Main story",

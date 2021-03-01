@@ -1,39 +1,40 @@
 import React, {useEffect, useState} from "react";
-import {Button, ButtonGroup, Container, Grid, Input, Menu, Segment, Transition} from "semantic-ui-react";
+import {Button, Container, Grid, Menu, Segment, Transition} from "semantic-ui-react";
 import {useTranslation} from "react-i18next";
-import StoryItem from "../../stories/menu/StoryItem";
-import {translations} from "../../../../constants/translation/TranslationKeys";
-import StoryDescription from "../../stories/menu/StoryDescription";
-import ObjectivesScreen from "../../stories/menu/ObjectivesScreen";
-import {constantObjectives} from "../../../../constants/stories/objectives/ObjectivesConstant";
-import CharacterScreen from "../../stories/menu/CharacterScreen";
 import MainItem from "./MainItem";
-
+import {tabs} from "../../../../constants/main/MenuTabs";
 
 export default function MainStoryMenu() {
     const { t } = useTranslation();
 
     const [visible, setVisible] = useState(false);
-    const [activeItem, setActiveItem] = useState('bio');
+    const [activeItem, setActiveItem] = useState(tabs[0].name);
 
-    const [race, setRace] = useState(false);
-    const [characteristics, setCharacteristics] = useState(true);
-    const [profession, setProfession] = useState(true);
+    const [gender, setGender] = useState(false);
+    const [race, setRace] = useState(true);
+    const [appearance, setAppearance] = useState(true);
     const [origins, setOrigins] = useState(true);
+    const [profession, setProfession] = useState(true);
+    const [characteristics, setCharacteristics] = useState(true);
+    const [skills, setSkills] = useState(true);
+    const [talents, setTalents] = useState(true);
 
 
-    const handleItemClick = (name, value) => {
-        console.log(value);
-        setActiveItem(name);
-        openTab(value);
+    const handleItemClick = (tab) => {
+        console.log(tab);
+        setActiveItem(tab.name);
+        openTab(tab.number);
     };
 
     const openTab = (num) => {
-        console.log(num);
-        setRace(!(num >= 1));
-        setCharacteristics(!(num >= 2));
-        setProfession(!(num >= 3));
+        setGender(!(num >= 1));
+        setRace(!(num >= 2));
+        setAppearance(!(num >= 3));
         setOrigins(!(num >= 4));
+        setProfession(!(num >= 5));
+        setCharacteristics(!(num >= 6));
+        setSkills(!(num >= 7));
+        setTalents(!(num >= 8));
     };
 
     useEffect(() => {
@@ -48,26 +49,55 @@ export default function MainStoryMenu() {
                     <Grid columns={3} centered>
                         <Grid.Row columns={4}>
                             <Grid.Column width={8} textAlign={"center"} className={'stories-menu-title'}>
-                                <Menu inverted widths={4}>
-                                    <MainItem disabled={race} color={'red'} name={'bio'} active={activeItem} handle={handleItemClick} value={1}/>
-                                    <MainItem disabled={characteristics} color={'orange'} name={'photos'} active={activeItem} handle={handleItemClick} value={2}/>
-                                    <MainItem disabled={profession} color={'olive'} name={'screen'} active={activeItem} handle={handleItemClick} value={3}/>
-                                    <MainItem disabled={origins} color={'yellow'} name={'elo'} active={activeItem} handle={handleItemClick} value={4}/>
+                                <Menu inverted widths={8}>
+                                    <MainItem disabled={gender} icon={<i className="venus mars icon"/>} color={'red'} active={activeItem} handle={handleItemClick} tab={tabs[0]}/>
+                                    <MainItem disabled={race} icon={<i className="user circle outline icon"/>} color={'orange'} active={activeItem} handle={handleItemClick} tab={tabs[1]}/>
+                                    <MainItem disabled={appearance} icon={<i className="address book outline icon"/>} color={'green'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[2]}/>
+                                    <MainItem disabled={origins} icon={<i className="home icon"/>} color={'teal'} name={tabs[3].name} active={activeItem} handle={handleItemClick} tab={tabs[3]}/>
+                                    <MainItem disabled={profession} icon={<i className="bookmark outline icon"/>} color={'blue'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[4]}/>
+                                    <MainItem disabled={characteristics} icon={<i className="clipboard outline icon"/>} color={'violet'} name={tabs[1].name} active={activeItem} handle={handleItemClick} tab={tabs[5]}/>
+                                    <MainItem disabled={skills} icon={<i className="book icon"/>} color={'purple'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[6]}/>
+                                    <MainItem disabled={talents} icon={<i className="file alternate outline icon"/>} color={'pink'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[7]}/>
                                 </Menu>
                                 <Segment attached='bottom'>
-                                    {activeItem === 'bio' &&
-                                    <Button size='mini' onClick={() => openTab(2)}>
+                                    {activeItem === tabs[0].name &&
+                                    <Button size='mini' onClick={() => openTab(tabs[1].number)}>
                                         OKEJ
                                     </Button>
                                     }
-                                    {activeItem === 'photos' &&
-                                    <Button size='mini' onClick={() => openTab(3)}>
+                                    {activeItem === tabs[1].name &&
+                                    <Button size='mini' onClick={() => openTab(tabs[2].number)}>
                                         OKEJ
                                     </Button>
                                     }
-                                    {activeItem === 'screen' &&
-                                    <Button size='mini' onClick={() => openTab(34)}>
+                                    {activeItem === tabs[2].name &&
+                                    <Button size='mini' onClick={() => openTab(tabs[3].number)}>
                                         OKEJ
+                                    </Button>
+                                    }
+                                    {activeItem === tabs[3].name &&
+                                    <Button size='mini' onClick={() => openTab(tabs[4].number)}>
+                                        OKEJ
+                                    </Button>
+                                    }
+                                    {activeItem === tabs[4].name &&
+                                    <Button size='mini' onClick={() => openTab(tabs[5].number)}>
+                                        OKEJ
+                                    </Button>
+                                    }
+                                    {activeItem === tabs[5].name &&
+                                    <Button size='mini' onClick={() => openTab(tabs[6].number)}>
+                                        OKEJ
+                                    </Button>
+                                    }
+                                    {activeItem === tabs[6].name &&
+                                    <Button size='mini' onClick={() => openTab(tabs[7].number)}>
+                                        OKEJ
+                                    </Button>
+                                    }
+                                    {activeItem === tabs[7].name &&
+                                    <Button size='mini'>
+                                        DALEj
                                     </Button>
                                     }
                                 </Segment>

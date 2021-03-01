@@ -6,7 +6,10 @@ export const translations = {
             settings: "menu.main.settings",
             game: "menu.main.game",
             side: "menu.main.side",
-            story: "menu.main.story"
+            story: "menu.main.story",
+            character: {
+                creator: "menu.main.character.creator"
+            }
         },
         story: {
             name: "menu.story.name",
