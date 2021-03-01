@@ -8,7 +8,10 @@ export const translations = {
             side: "menu.main.side",
             story: "menu.main.story",
             character: {
-                creator: "menu.main.character.creator"
+                creator:{
+                    tabs: "menu.main.character.creator.tabs",
+                    gender: "menu.main.character.creator.gender"
+                }
             }
         },
         story: {

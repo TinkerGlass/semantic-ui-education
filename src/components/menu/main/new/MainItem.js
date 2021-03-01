@@ -19,7 +19,7 @@ export default function MainItem(props) {
                 </Menu.Item>
             }
         >
-            <Header as='h4'>{t(translations.menu.main.character.creator + '.' + props.tab.name)}</Header>
+            <Header as='h4'>{t(translations.menu.main.character.creator.tabs + '.' + props.tab.name)}</Header>
         </Popup>
     )
 }

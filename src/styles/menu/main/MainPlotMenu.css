@@ -1,0 +1,17 @@
+.creator-card-content {
+    height: 500px;
+    min-height: 500px;
+    color: black;
+    vertical-align: center;
+    align-content: center;
+}
+
+.gender-buttons {
+    height: 90px;
+    background-color: green;
+}
+
+.bottom-panel {
+    height: 50px;
+    text-align: center;
+}

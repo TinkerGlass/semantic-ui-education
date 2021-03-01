@@ -1,12 +1,27 @@
 import React, {useEffect, useState} from "react";
-import {Button, Container, Grid, Menu, Segment, Transition} from "semantic-ui-react";
+import {Button, Container, Grid, Menu, Message, Segment, Transition} from "semantic-ui-react";
 import {useTranslation} from "react-i18next";
 import MainItem from "./MainItem";
 import {tabs} from "../../../../constants/main/MenuTabs";
+import GenderTab from "./character/creator/GenderTab";
+import "../../../../styles/menu/main/MainPlotMenu.css"
+import RaceTab from "./character/creator/RaceTab";
+
+const characterTemplate = {
+    gender: undefined,
+    race: undefined,
+    appearance: undefined,
+    origins: undefined,
+    profession: undefined,
+    characteristics: undefined,
+    skills: undefined,
+    talents: undefined
+};
 
 export default function MainStoryMenu() {
     const { t } = useTranslation();
 
+    const [character, setCharacter] = useState(characterTemplate);
     const [visible, setVisible] = useState(false);
     const [activeItem, setActiveItem] = useState(tabs[0].name);
 
@@ -21,7 +36,6 @@ export default function MainStoryMenu() {
 
 
     const handleItemClick = (tab) => {
-        console.log(tab);
         setActiveItem(tab.name);
         openTab(tab.number);
     };
@@ -37,6 +51,15 @@ export default function MainStoryMenu() {
         setTalents(!(num >= 8));
     };
 
+    const setCharacterGender = (gender, tab) => {
+        console.log(tab);
+        let helpCharacter = character;
+        helpCharacter.gender = gender;
+        setCharacter(helpCharacter);
+        openTab(tab.number);
+        setActiveItem(tab.name);
+    };
+
     useEffect(() => {
         setVisible(true);
     }, []);
@@ -48,7 +71,7 @@ export default function MainStoryMenu() {
                 <Container fluid>
                     <Grid columns={3} centered>
                         <Grid.Row columns={4}>
-                            <Grid.Column width={8} textAlign={"center"} className={'stories-menu-title'}>
+                            <Grid.Column width={12} textAlign={"center"} className={'stories-menu-title'}>
                                 <Menu inverted widths={8}>
                                     <MainItem disabled={gender} icon={<i className="venus mars icon"/>} color={'red'} active={activeItem} handle={handleItemClick} tab={tabs[0]}/>
                                     <MainItem disabled={race} icon={<i className="user circle outline icon"/>} color={'orange'} active={activeItem} handle={handleItemClick} tab={tabs[1]}/>
@@ -61,14 +84,10 @@ export default function MainStoryMenu() {
                                 </Menu>
                                 <Segment attached='bottom'>
                                     {activeItem === tabs[0].name &&
-                                    <Button size='mini' onClick={() => openTab(tabs[1].number)}>
-                                        OKEJ
-                                    </Button>
+                                        <GenderTab tab={tabs[1]} handleDecision={setCharacterGender}/>
                                     }
                                     {activeItem === tabs[1].name &&
-                                    <Button size='mini' onClick={() => openTab(tabs[2].number)}>
-                                        OKEJ
-                                    </Button>
+                                        <RaceTab/>
                                     }
                                     {activeItem === tabs[2].name &&
                                     <Button size='mini' onClick={() => openTab(tabs[3].number)}>
@@ -101,6 +120,68 @@ export default function MainStoryMenu() {
                                     </Button>
                                     }
                                 </Segment>
+                                <Grid>
+                                    <Grid.Row columns={8} className={'bottom-panel'}>
+                                        <Transition.Group animation={'fade down'} duration={1200}>
+                                            {character.gender &&
+                                            <Grid.Column>
+                                                <Message color={'red'}>
+                                                    {character.gender}
+                                                </Message>
+                                            </Grid.Column>
+                                            }
+                                        </Transition.Group>
+                                        {character.race &&
+                                        <Grid.Column>
+                                            <Message>
+                                                {character.race}
+                                            </Message>
+                                        </Grid.Column>
+                                        }
+                                        {character.appearance &&
+                                        <Grid.Column>
+                                            <Message>
+                                                {character.appearance}
+                                            </Message>
+                                        </Grid.Column>
+                                        }
+                                        {character.origins &&
+                                        <Grid.Column>
+                                            <Message>
+                                                {character.origins}
+                                            </Message>
+                                        </Grid.Column>
+                                        }
+                                        {character.profession &&
+                                        <Grid.Column>
+                                            <Message>
+                                                {character.profession}
+                                            </Message>
+                                        </Grid.Column>
+                                        }
+                                        {character.characteristics &&
+                                        <Grid.Column>
+                                            <Message>
+                                                {character.characteristics}
+                                            </Message>
+                                        </Grid.Column>
+                                        }
+                                        {character.skills &&
+                                        <Grid.Column>
+                                            <Message>
+                                                {character.skills}
+                                            </Message>
+                                        </Grid.Column>
+                                        }
+                                        {character.talents &&
+                                        <Grid.Column>
+                                            <Message>
+                                                {character.talents}
+                                            </Message>
+                                        </Grid.Column>
+                                        }
+                                    </Grid.Row>
+                                </Grid>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>

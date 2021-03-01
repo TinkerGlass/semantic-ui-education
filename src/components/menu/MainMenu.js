@@ -3,8 +3,8 @@ import "../../styles/menu/MainMenu.css";
 import {Button, Container, Grid, Transition} from "semantic-ui-react";
 import {useTranslation} from "react-i18next";
 import {translations} from "../../constants/translation/TranslationKeys";
-import MenuPanel from "./main/MenuPanel";
-import StoryPanel from "./plot/StoryPanel";
+import MenuPanel from "./plot/MenuPanel";
+import StoryPanel from "./main/StoryPanel";
 import SidePanel from "./stories/SidePanel";
 import {useHistory} from "react-router-dom";
 
