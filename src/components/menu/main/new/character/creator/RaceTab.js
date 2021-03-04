@@ -2,13 +2,16 @@ import {Button, Divider, Grid, Segment} from "semantic-ui-react";
 import React, {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
 import {translations} from "../../../../../../constants/translation/TranslationKeys";
+import BaseCharacteristicsTable from "../additional/race/BaseCharacteristicsTable";
+import RaceSkillTable from "../additional/race/RaceSkillTable";
+import RaceTalentTable from "../additional/race/RaceTalentTable";
 
 const type = 'race';
 
 export default function RaceTab(props) {
-    const { t } = useTranslation();
+    const { t } = useTranslation(['translation', 'skills']);
 
-    const [race, setRace] = useState('');
+    const [race, setRace] = useState('dwarf');
 
     const [dwarf, setDwarf] = useState(true);
     const [elf, setElf] = useState(false);
@@ -40,19 +43,19 @@ export default function RaceTab(props) {
             <Grid.Column>
                 <Segment inverted color='gray' className={'race-panel'}>
                     <Segment vertical>
-                        <Button active={dwarf} inverted color={'olive'} size='massive'
+                        <Button active={dwarf} inverted color={'olive'} size='tiny'
                                 content={t(translations.menu.main.character.creator.race.name.dwarf)} onClick={() => handleSelect('dwarf')} fluid/>
                     </Segment>
                     <Segment vertical>
-                        <Button active={elf} inverted color={'olive'} size='massive'
+                        <Button active={elf} inverted color={'olive'} size='tiny'
                                 content={t(translations.menu.main.character.creator.race.name.elf)} onClick={() => handleSelect('elf')} fluid/>
                     </Segment>
                     <Segment vertical>
-                        <Button active={halfling} inverted color={'olive'} size='massive'
+                        <Button active={halfling} inverted color={'olive'} size='tiny'
                                 content={t(translations.menu.main.character.creator.race.name.halfling)} onClick={() => handleSelect('halfling')} fluid/>
                     </Segment>
                     <Segment vertical>
-                        <Button active={human} inverted color={'olive'} size='massive'
+                        <Button active={human} inverted color={'olive'} size='tiny'
                                 content={t(translations.menu.main.character.creator.race.name.human)} onClick={() => handleSelect('human')} fluid/>
                     </Segment>
                     <Segment vertical>
@@ -62,18 +65,30 @@ export default function RaceTab(props) {
                     </Segment>
                 </Segment>
             </Grid.Column>
-            <Grid.Column centered key={'desc'}>
+            <Grid.Column key={'stats'}>
                 <Segment className={'race-panel'}>
                     <Segment vertical textAlign={"center"}>
-                        <h2>{t(translations.menu.main.character.creator.race.description.name)}</h2>
+                        <h4>{t(translations.menu.main.character.creator.race.characteristics.name)}</h4>
                     </Segment>
                     <Segment vertical>
-                        {t(translations.menu.main.character.creator.race.description.default + '.' + race)}
+                        <BaseCharacteristicsTable race={race}/>
                     </Segment>
                 </Segment>
             </Grid.Column>
             <Grid.Column key={'stats'}>
-                <Segment inverted color='gray' className={'race-panel'}>
+                <Segment className={'race-panel'}>
+                    <Segment vertical textAlign={"center"}>
+                        <h4>{t(translations.menu.main.character.creator.race.description.name)}</h4>
+                    </Segment>
+                    <Segment vertical>
+                        <RaceSkillTable race={race}/>
+                    </Segment>
+                    <Segment vertical textAlign={"center"}>
+                        <h4>{t(translations.menu.main.character.creator.race.description.name)}</h4>
+                    </Segment>
+                    <Segment vertical>
+                        <RaceTalentTable race={race}/>
+                    </Segment>
                 </Segment>
             </Grid.Column>
         </Grid>

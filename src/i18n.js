@@ -13,7 +13,6 @@ i18n.use(Backend)
         fallbackLng,
         debug: true,
         whitelist: availableLanguages,
-
         interpolation: {
             escapeValue: false
         },

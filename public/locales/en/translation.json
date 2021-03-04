@@ -42,6 +42,41 @@
               "elf": "Elves",
               "halfling": "Halflings",
               "human": "Humans"
+            },
+            "characteristics": {
+              "name": "Characteristics",
+              "base": {
+                "title": {
+                  "ws": "Weapon Skills",
+                  "bs": "Ballistic Skills",
+                  "s": "Strength",
+                  "t": "Toughness",
+                  "ag": "Agility",
+                  "int": "Intelligence",
+                  "wp": "Will Power",
+                  "fel": "Fellowship"
+                },
+                "description": {
+                  "ws": "Describes how good you are in close combat. Same with bare hands and with white weapon.",
+                  "bs": "Describes how good you are in range combat. How good you are in using bows, crossbows and guns.",
+                  "s": "Describes how physically good you are. How strong your body is.",
+                  "t": "Describes how high is your resistance for wounds effects, poisons and diseases.",
+                  "ag": "Describes how fast you reacting and how good you are with manual problems",
+                  "int": "Describes how intelligent you are, how good toy are in reasoning things and remembering things.",
+                  "wp": "Describes how powerful is your will, how much you can take before mental break.",
+                  "fel": "Describes your charisma, how good you are in interpersonal contacts."
+                },
+                "shortcut": {
+                  "ws": "WS",
+                  "bs": "BS",
+                  "s": "S",
+                  "t": "T",
+                  "ag": "AG",
+                  "int": "INT",
+                  "wp": "WP",
+                  "fel": "FEL"
+                }
+              }
             }
           }
         }

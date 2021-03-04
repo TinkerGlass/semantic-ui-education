@@ -24,3 +24,28 @@
 .race-panel {
     height: 450px;
 }
+.race-panel-white {
+    height: 450px;
+    color: white;
+}
+
+.characteristics-popup{
+    background-color: blue;
+}
+
+
+.description {
+    height: 165px;
+}
+
+.skills-talents-table-body {
+    display: block;
+    height: 135px;
+    overflow: auto;
+}
+
+.characteristics-table-body {
+    display: block;
+    height: 135px;
+    overflow: auto;
+}

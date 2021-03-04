@@ -21,6 +21,24 @@ export const translations = {
                         description:{
                             name: "menu.main.character.creator.race.description.name",
                             default: "menu.main.character.creator.race.description"
+                        },
+                        characteristics:{
+                            name: "menu.main.character.creator.race.characteristics.name",
+                            base:{
+                                title: "menu.main.character.creator.race.characteristics.base.title",
+                                description: "menu.main.character.creator.race.characteristics.base.description",
+                                shortcut: "menu.main.character.creator.race.characteristics.base.shortcut"
+                            }
+                        },
+                        skills: {
+                            title: "skills:menu.main.creator.skills.title",
+                            name: "skills:menu.main.creator.skills.name",
+                            description: "skills:menu.main.creator.skills.description"
+                        },
+                        talents: {
+                            title: "skills:menu.main.creator.talents.title",
+                            name: "skills:menu.main.creator.talents.name",
+                            description: "skills:menu.main.creator.talents.description"
                         }
                     }
                 }

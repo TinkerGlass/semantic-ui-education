@@ -1,0 +1,82 @@
+{
+  "menu": {
+    "main":{
+      "creator": {
+        "skills": {
+          "title": "Skills",
+          "name": {
+            "acaKnowGeneHer": "Academic Knowledge (Genealogy/Heraldry)",
+            "comKnowDwarfs": "Common Knowledge (Dwarfs)",
+            "comKnowElves": "Common Knowledge (Elves)",
+            "comKnowEmpire": "Common Knowledge (Empire)",
+            "comKnowHalf": "Common Knowledge (Halflings)",
+            "gossip": "Gossip",
+            "speakLangElth": "Speak Language (Eltharin)",
+            "speakLangHalf": "Speak Language (Halfling)",
+            "speakLangKhaz": "Speak Language (Khazalid)",
+            "speakLangReik": "Speak Language (Reikspiel)",
+            "tradeMiner": "Trade (Miner)",
+            "tradeSmith": "Trade (Smith)",
+            "tradeStone": "Trade (Stoneworker)",
+            "tradeCook": "Trade (Cook)",
+            "tradeFarmer": "Trade (Farmer)"
+          },
+          "description": {
+            "acaKnowGeneHer": "Represents a depth of learning about Genealogy and Heraldry far beyond Common Knowledge and requires extensive study.",
+            "comKnowDwarfs": "Represents basics you learn about Dwarfs when you were growing up or were travelling extensively through region.",
+            "comKnowElves": "Represents basics you learn about Elves when you were growing up or were travelling extensively through region.",
+            "comKnowEmpire": "Represents basics you learn about Empire when you were growing up or were travelling extensively through region.",
+            "comKnowHalf": "Represents basics you learn about Halflings when you were growing up or were travelling extensively through region.",
+            "gossip": "Skill useful to gather information from others.",
+            "speakLangElth": "You gain knowledge about Eltharin that let you communicate with others who knows this language",
+            "speakLangHalf": "You gain knowledge about Halfling that let you communicate with others who knows this language",
+            "speakLangKhaz": "You gain knowledge about Khazalid that let you communicate with others who knows this language",
+            "speakLangReik": "You gain knowledge about Reikspiel that let you communicate with others who knows this language",
+            "tradeMiner": "Describes you occupation in common world, correctly that you are a Miner. Trade skill is useful in places connected to it sphere of interests.",
+            "tradeSmith": "Describes you occupation in common world, correctly that you are a Smith. Trade skill is useful in places connected to it sphere of interests.",
+            "tradeStone": "Describes you occupation in common world, correctly that you are a Stoneworker. Trade skill is useful in places connected to it sphere of interests.",
+            "tradeCook": "Describes you occupation in common world, correctly that you are a Cook. Trade skill is useful in places connected to it sphere of interests.",
+            "tradeFarmer": "Describes you occupation in common world, correctly that you are a Farmer. Trade skill is useful in places connected to it sphere of interests."
+          }
+        },
+        "talents": {
+          "title": "Talents",
+          "name": {
+            "aethAttun": "Aethyric Attunement",
+            "coolhead": "Coolheaded",
+            "dwarfcraft": "Dwarfcraft",
+            "exVision": "Excellent Vision",
+            "gruBorFur": "Grudge-Born Fury",
+            "nightVision": "Night Vision",
+            "resistChaos": "Resistance to Chaos",
+            "resistMagic": "Resistance to Magic",
+            "savvy": "Savvy",
+            "speWeaGroLongBow": "Special Weapon Group (Longbow)",
+            "speWeaGroSling": "Special Weapon Group (Sling)",
+            "stoutHeart": "Stout-hearted",
+            "sturdy": "Sturdy",
+            "randomOne": "One random talent",
+            "randomTwo": "Two random talents"
+          },
+          "description": {
+            "aethAttun": "You are well attuned to Aethyr. You gain +10% bonus on Channeling and Magical Sense Skill Tests.",
+            "coolhead": "You gain permanent +5% bonus to your Will Power Characteristics.",
+            "dwarfcraft": "You gain +10% bonus to trade skills such as: Armourer, Brewer, Gem Cutter, Gunsmith, Miner, Smith, Stoneworker and Weaponsmith.",
+            "exVision": "Your eyes are keen. You get permanent +10% bonus to test such as: Perception (based on sight) and Lip Reading.",
+            "gruBorFur": "You have grudges against the various Goblinoids, yoy gain +5% bonus to Weapon Skill whe fighting with Orcs, Golbins and Hobgoblins.",
+            "nightVision": "You are capable to see in darkness on 30 yard distance.",
+            "resistChaos": "You cannot be a spellcaster but you are immune to Chaos. You cannot have a mutation and gan +10% bonus to Will Power against the Chaos effects.",
+            "resistMagic": "You gain +10% bonus on Will Power to resist magic.",
+            "savvy": "You gain permanent +5% bonus to your Intelligence Characteristics.",
+            "speWeaGroLongBow": "You know how to use a group of weapons that require special training. Precisely a Longbow.",
+            "speWeaGroSling": "You know how to use a group of weapons that require special training. Precisely a Sling.",
+            "stoutHeart": "You gain a +10% bonus on Fear and Terror test and on Will Power test against intimidation.",
+            "sturdy": "You dont gain penalties when wearing heavy armor.",
+            "randomOne": "In talents screen you will be able to rand a talent for you.",
+            "randomTwo": "In talents screen you will be able to rand two talents for you."
+          }
+        }
+      }
+    }
+  }
+}
