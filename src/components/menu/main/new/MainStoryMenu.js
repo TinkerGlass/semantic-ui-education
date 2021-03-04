@@ -95,9 +95,12 @@ export default function MainStoryMenu() {
                                     }
                                     {activeItem === tabs[2].name &&
                                     <Grid.Column width={16} textAlign={"center"} className={'stories-menu-title'}>
-                                        <AppearanceTab/>
+                                        <AppearanceTab appearance={character.appearance} race={character.race} tab={tabs[3]} handleDecision={setCharacterProperty}/>
                                     </Grid.Column>
-
+                                    }
+                                    {activeItem === tabs[3].name &&
+                                        <Grid.Column width={16} textAlign={"center"} className={'stories-menu-title'}>
+                                        </Grid.Column>
                                     }
                                     {/*<Grid.Column width={10} textAlign={"center"} className={'stories-menu-title'}>*/}
                                     {/*    <Segment>*/}

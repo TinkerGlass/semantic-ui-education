@@ -6,6 +6,14 @@
     align-content: center;
 }
 
+.destiny-health-panel {
+    height: 472px;
+}
+
+.appearance-panel {
+    height: 222px;
+}
+
 .creator-card {
     height: 500px;
     color: black;

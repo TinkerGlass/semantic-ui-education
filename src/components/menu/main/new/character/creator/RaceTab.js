@@ -40,7 +40,7 @@ export default function RaceTab(props) {
 
     return(
         <Grid centered columns={3} fluid className={'creator-card-content'}>
-            <Grid.Column>
+            <Grid.Column key={'choice'}>
                 <Segment inverted color='gray' className={'race-panel'}>
                     <Segment vertical>
                         <Button active={dwarf} inverted color={'olive'} size='tiny'
@@ -75,7 +75,7 @@ export default function RaceTab(props) {
                     </Segment>
                 </Segment>
             </Grid.Column>
-            <Grid.Column key={'stats'}>
+            <Grid.Column key={'skills'}>
                 <Segment className={'race-panel'}>
                     <Segment vertical textAlign={"center"}>
                         <h4>{t(translations.menu.main.character.creator.race.description.name)}</h4>

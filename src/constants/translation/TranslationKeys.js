@@ -40,6 +40,9 @@ export const translations = {
                             name: "skills:menu.main.creator.talents.name",
                             description: "skills:menu.main.creator.talents.description"
                         }
+                    },
+                    appearance: {
+                        color: "skills:menu.main.creator.appearance.colors"
                     }
                 }
             }

@@ -1,0 +1,23 @@
+{
+  "menu": {
+    "main": {
+      "creator": {
+        "appearance": {
+          "colors": {
+            "ashblond": "Ash blond",
+            "yellow": "Yellow",
+            "red": "Red",
+            "cooper": "Copper",
+            "corn": "Corn",
+            "lightBrown": "Light Brown",
+            "brown": "Brown",
+            "darkBrown": "Dark Brown",
+            "blueBlack": "Blue Black",
+            "black": "Black",
+            "silver": "Silver"
+          }
+        }
+      }
+    }
+  }
+}
