@@ -42,7 +42,25 @@ export const translations = {
                         }
                     },
                     appearance: {
-                        color: "skills:menu.main.creator.appearance.colors"
+                        color: "appearance:menu.main.creator.appearance.colors",
+                        health: {
+                            name: "appearance:menu.main.creator.appearance.health.name"
+                        },
+                        fate: {
+                            name: "appearance:menu.main.creator.appearance.fate.name"
+                        },
+                        height: {
+                            name: "appearance:menu.main.creator.appearance.height.name"
+                        },
+                        weight: {
+                            name: "appearance:menu.main.creator.appearance.weight.name"
+                        },
+                        eyes: {
+                            name: "appearance:menu.main.creator.appearance.eyes.name"
+                        },
+                        hair: {
+                            name: "appearance:menu.main.creator.appearance.hair.name"
+                        }
                     }
                 }
             }

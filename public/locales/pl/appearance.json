@@ -3,6 +3,24 @@
     "main": {
       "creator": {
         "appearance": {
+          "health": {
+            "name": "Health"
+          },
+          "fate": {
+            "name": "Fate"
+          },
+          "height": {
+            "name": "Height"
+          },
+          "weight": {
+            "name": "Weight"
+          },
+          "eyes": {
+            "name": "Eyes Color"
+          },
+          "hair": {
+            "name": "Hair Color"
+          },
           "colors": {
             "ashblond": "Ash blond",
             "yellow": "Yellow",

@@ -40,146 +40,110 @@ export const startingDestiny = {
 
 export const hairColor = {
     dwarf:[
-        translations.menu.main.character.creator.appearance + '.ashblond',
-        translations.menu.main.character.creator.appearance + '.yellow',
-        translations.menu.main.character.creator.appearance + '.red',
-        translations.menu.main.character.creator.appearance + '.cooper',
-        translations.menu.main.character.creator.appearance + '.lightBrown',
-        translations.menu.main.character.creator.appearance + '.brown',
-        translations.menu.main.character.creator.appearance + '.brown',
-        translations.menu.main.character.creator.appearance + '.darkBrown',
-        translations.menu.main.character.creator.appearance + '.blueBlack',
-        translations.menu.main.character.creator.appearance + '.black',
+        translations.menu.main.character.creator.appearance.color + '.ashblond',
+        translations.menu.main.character.creator.appearance.color + '.yellow',
+        translations.menu.main.character.creator.appearance.color + '.red',
+        translations.menu.main.character.creator.appearance.color + '.cooper',
+        translations.menu.main.character.creator.appearance.color + '.lightBrown',
+        translations.menu.main.character.creator.appearance.color + '.brown',
+        translations.menu.main.character.creator.appearance.color + '.darkBrown',
+        translations.menu.main.character.creator.appearance.color + '.blueBlack',
+        translations.menu.main.character.creator.appearance.color + '.black',
     ],
     elf:[
-        translations.menu.main.character.creator.appearance + '.silver',
-        translations.menu.main.character.creator.appearance + '.ashblond',
-        translations.menu.main.character.creator.appearance + '.corn',
-        translations.menu.main.character.creator.appearance + '.yellow',
-        translations.menu.main.character.creator.appearance + '.cooper',
-        translations.menu.main.character.creator.appearance + '.lightBrown',
-        translations.menu.main.character.creator.appearance + '.lightBrown',
-        translations.menu.main.character.creator.appearance + '.brown',
-        translations.menu.main.character.creator.appearance + '.darkBrown',
-        translations.menu.main.character.creator.appearance + '.black',
+        translations.menu.main.character.creator.appearance.color + '.silver',
+        translations.menu.main.character.creator.appearance.color + '.ashblond',
+        translations.menu.main.character.creator.appearance.color + '.corn',
+        translations.menu.main.character.creator.appearance.color + '.yellow',
+        translations.menu.main.character.creator.appearance.color + '.cooper',
+        translations.menu.main.character.creator.appearance.color + '.lightBrown',
+        translations.menu.main.character.creator.appearance.color + '.brown',
+        translations.menu.main.character.creator.appearance.color + '.darkBrown',
+        translations.menu.main.character.creator.appearance.color + '.black',
     ],
     halfling:[
-        translations.menu.main.character.creator.appearance + '.ashblond',
-        translations.menu.main.character.creator.appearance + '.corn',
-        translations.menu.main.character.creator.appearance + '.yellow',
-        translations.menu.main.character.creator.appearance + '.yellow',
-        translations.menu.main.character.creator.appearance + '.cooper',
-        translations.menu.main.character.creator.appearance + '.red',
-        translations.menu.main.character.creator.appearance + '.lightBrown',
-        translations.menu.main.character.creator.appearance + '.brown',
-        translations.menu.main.character.creator.appearance + '.darkBrown',
-        translations.menu.main.character.creator.appearance + '.black',
+        translations.menu.main.character.creator.appearance.color + '.ashblond',
+        translations.menu.main.character.creator.appearance.color + '.corn',
+        translations.menu.main.character.creator.appearance.color + '.yellow',
+        translations.menu.main.character.creator.appearance.color + '.cooper',
+        translations.menu.main.character.creator.appearance.color + '.red',
+        translations.menu.main.character.creator.appearance.color + '.lightBrown',
+        translations.menu.main.character.creator.appearance.color + '.brown',
+        translations.menu.main.character.creator.appearance.color + '.darkBrown',
+        translations.menu.main.character.creator.appearance.color + '.black',
     ],
     human:[
-        translations.menu.main.character.creator.appearance + '.ashblond',
-        translations.menu.main.character.creator.appearance + '.corn',
-        translations.menu.main.character.creator.appearance + '.yellow',
-        translations.menu.main.character.creator.appearance + '.cooper',
-        translations.menu.main.character.creator.appearance + '.red',
-        translations.menu.main.character.creator.appearance + '.lightBrown',
-        translations.menu.main.character.creator.appearance + '.brown',
-        translations.menu.main.character.creator.appearance + '.brown',
-        translations.menu.main.character.creator.appearance + '.darkBrown',
-        translations.menu.main.character.creator.appearance + '.black',
+        translations.menu.main.character.creator.appearance.color + '.ashblond',
+        translations.menu.main.character.creator.appearance.color + '.corn',
+        translations.menu.main.character.creator.appearance.color + '.yellow',
+        translations.menu.main.character.creator.appearance.color + '.cooper',
+        translations.menu.main.character.creator.appearance.color + '.red',
+        translations.menu.main.character.creator.appearance.color + '.lightBrown',
+        translations.menu.main.character.creator.appearance.color + '.brown',
+        translations.menu.main.character.creator.appearance.color + '.darkBrown',
+        translations.menu.main.character.creator.appearance.color + '.black',
     ]
 };
 
 export const eyesColor = {
     dwarf:[
-        translations.menu.main.character.creator.appearance + '.paleGrey',
-        translations.menu.main.character.creator.appearance + '.blue',
-        translations.menu.main.character.creator.appearance + '.cooper',
-        translations.menu.main.character.creator.appearance + '.lightBrown',
-        translations.menu.main.character.creator.appearance + '.lightBrown',
-        translations.menu.main.character.creator.appearance + '.brown',
-        translations.menu.main.character.creator.appearance + '.brown',
-        translations.menu.main.character.creator.appearance + '.darkBrown',
-        translations.menu.main.character.creator.appearance + '.darkBrown',
-        translations.menu.main.character.creator.appearance + '.purple',
+        translations.menu.main.character.creator.appearance.color + '.paleGrey',
+        translations.menu.main.character.creator.appearance.color + '.blue',
+        translations.menu.main.character.creator.appearance.color + '.cooper',
+        translations.menu.main.character.creator.appearance.color + '.lightBrown',
+        translations.menu.main.character.creator.appearance.color + '.brown',
+        translations.menu.main.character.creator.appearance.color + '.darkBrown',
+        translations.menu.main.character.creator.appearance.color + '.purple',
     ],
     elf:[
-        translations.menu.main.character.creator.appearance + '.greyBlue',
-        translations.menu.main.character.creator.appearance + '.blue',
-        translations.menu.main.character.creator.appearance + '.green',
-        translations.menu.main.character.creator.appearance + '.cooper',
-        translations.menu.main.character.creator.appearance + '.lightBrown',
-        translations.menu.main.character.creator.appearance + '.brown',
-        translations.menu.main.character.creator.appearance + '.darkBrown',
-        translations.menu.main.character.creator.appearance + '.silver',
-        translations.menu.main.character.creator.appearance + '.purple',
-        translations.menu.main.character.creator.appearance + '.black',
+        translations.menu.main.character.creator.appearance.color + '.greyBlue',
+        translations.menu.main.character.creator.appearance.color + '.blue',
+        translations.menu.main.character.creator.appearance.color + '.green',
+        translations.menu.main.character.creator.appearance.color + '.cooper',
+        translations.menu.main.character.creator.appearance.color + '.lightBrown',
+        translations.menu.main.character.creator.appearance.color + '.brown',
+        translations.menu.main.character.creator.appearance.color + '.darkBrown',
+        translations.menu.main.character.creator.appearance.color + '.silver',
+        translations.menu.main.character.creator.appearance.color + '.purple',
+        translations.menu.main.character.creator.appearance.color + '.black',
     ],
     halfling:[
-        translations.menu.main.character.creator.appearance + '.blue',
-        translations.menu.main.character.creator.appearance + '.hazel',
-        translations.menu.main.character.creator.appearance + '.hazel',
-        translations.menu.main.character.creator.appearance + '.lightBrown',
-        translations.menu.main.character.creator.appearance + '.lightBrown',
-        translations.menu.main.character.creator.appearance + '.brown',
-        translations.menu.main.character.creator.appearance + '.brown',
-        translations.menu.main.character.creator.appearance + '.darkBrown',
-        translations.menu.main.character.creator.appearance + '.darkBrown',
-        translations.menu.main.character.creator.appearance + '.darkBrown',
+        translations.menu.main.character.creator.appearance.color + '.blue',
+        translations.menu.main.character.creator.appearance.color + '.hazel',
+        translations.menu.main.character.creator.appearance.color + '.lightBrown',
+        translations.menu.main.character.creator.appearance.color + '.brown',
+        translations.menu.main.character.creator.appearance.color + '.darkBrown'
     ],
     human:[
-        translations.menu.main.character.creator.appearance + '.paleGrey',
-        translations.menu.main.character.creator.appearance + '.greyBlue',
-        translations.menu.main.character.creator.appearance + '.blue',
-        translations.menu.main.character.creator.appearance + '.green',
-        translations.menu.main.character.creator.appearance + '.cooper',
-        translations.menu.main.character.creator.appearance + '.lightBrown',
-        translations.menu.main.character.creator.appearance + '.brown',
-        translations.menu.main.character.creator.appearance + '.darkBrown',
-        translations.menu.main.character.creator.appearance + '.purple',
-        translations.menu.main.character.creator.appearance + '.black',
+        translations.menu.main.character.creator.appearance.color + '.paleGrey',
+        translations.menu.main.character.creator.appearance.color + '.greyBlue',
+        translations.menu.main.character.creator.appearance.color + '.blue',
+        translations.menu.main.character.creator.appearance.color + '.green',
+        translations.menu.main.character.creator.appearance.color + '.cooper',
+        translations.menu.main.character.creator.appearance.color + '.lightBrown',
+        translations.menu.main.character.creator.appearance.color + '.brown',
+        translations.menu.main.character.creator.appearance.color + '.darkBrown',
+        translations.menu.main.character.creator.appearance.color + '.purple',
+        translations.menu.main.character.creator.appearance.color + '.black',
     ]
 };
 
 export const heightValue= {
     dwarf: {
-        male: {
-            min: 145,
-            max: 165
-        },
-        female: {
-            min: 130,
-            max: 150
-        }
+        min: 130,
+        max: 165
     },
     elf: {
-        male: {
-            min: 170,
-            max: 190
-        },
-        female: {
-            min: 160,
-            max: 180
-        }
+        min: 160,
+        max: 190
     },
     halfling: {
-        male: {
-            min: 110,
-            max: 130
-        },
-        female: {
-            min: 100,
-            max: 120
-        }
+        min: 100,
+        max: 130
     },
     human: {
-        male: {
-            min: 150,
-            max: 170
-        },
-        female: {
-            min: 160,
-            max: 180
-        }
+        min: 150,
+        max: 180
     }
 };
 

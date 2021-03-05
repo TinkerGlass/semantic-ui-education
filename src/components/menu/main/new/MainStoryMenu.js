@@ -11,7 +11,15 @@ import AppearanceTab from "./character/creator/AppearanceTab";
 const characterTemplate = {
     gender: undefined,
     race: undefined,
-    appearance: undefined,
+    appearance: {
+        name: undefined,
+        health: undefined,
+        fate: undefined,
+        height: undefined,
+        weight: undefined,
+        hair: undefined,
+        eyes: undefined,
+    },
     origins: undefined,
     profession: undefined,
     characteristics: undefined,
@@ -75,12 +83,12 @@ export default function MainStoryMenu() {
                                 <Menu inverted widths={8}>
                                     <MainItem disabled={gender} icon={<i className="venus mars icon"/>} color={'red'} active={activeItem} handle={handleItemClick} tab={tabs[0]}/>
                                     <MainItem disabled={race} icon={<i className="user circle outline icon"/>} color={'orange'} active={activeItem} handle={handleItemClick} tab={tabs[1]}/>
-                                    <MainItem disabled={appearance} icon={<i className="address book outline icon"/>} color={'green'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[2]}/>
-                                    <MainItem disabled={origins} icon={<i className="home icon"/>} color={'teal'} name={tabs[3].name} active={activeItem} handle={handleItemClick} tab={tabs[3]}/>
-                                    <MainItem disabled={profession} icon={<i className="bookmark outline icon"/>} color={'blue'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[4]}/>
-                                    <MainItem disabled={characteristics} icon={<i className="clipboard outline icon"/>} color={'violet'} name={tabs[1].name} active={activeItem} handle={handleItemClick} tab={tabs[5]}/>
-                                    <MainItem disabled={skills} icon={<i className="book icon"/>} color={'purple'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[6]}/>
-                                    <MainItem disabled={talents} icon={<i className="file alternate outline icon"/>} color={'pink'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[7]}/>
+                                    <MainItem disabled={appearance} icon={<i className="address book outline icon"/>} color={'yellow'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[2]}/>
+                                    <MainItem disabled={origins} icon={<i className="home icon"/>} color={'olive'} name={tabs[3].name} active={activeItem} handle={handleItemClick} tab={tabs[3]}/>
+                                    <MainItem disabled={profession} icon={<i className="bookmark outline icon"/>} color={'green'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[4]}/>
+                                    <MainItem disabled={characteristics} icon={<i className="clipboard outline icon"/>} color={'teal'} name={tabs[1].name} active={activeItem} handle={handleItemClick} tab={tabs[5]}/>
+                                    <MainItem disabled={skills} icon={<i className="book icon"/>} color={'blue'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[6]}/>
+                                    <MainItem disabled={talents} icon={<i className="file alternate outline icon"/>} color={'violet'} name={tabs[2].name} active={activeItem} handle={handleItemClick} tab={tabs[7]}/>
                                 </Menu>
                                 <Grid columns={3} centered>
                                     {activeItem === tabs[0].name &&
@@ -99,8 +107,8 @@ export default function MainStoryMenu() {
                                     </Grid.Column>
                                     }
                                     {activeItem === tabs[3].name &&
-                                        <Grid.Column width={16} textAlign={"center"} className={'stories-menu-title'}>
-                                        </Grid.Column>
+                                    <Grid.Column width={16} textAlign={"center"} className={'stories-menu-title'}>
+                                    </Grid.Column>
                                     }
                                     {/*<Grid.Column width={10} textAlign={"center"} className={'stories-menu-title'}>*/}
                                     {/*    <Segment>*/}
@@ -172,10 +180,10 @@ export default function MainStoryMenu() {
                                             </Grid.Column>
                                             }
                                         </Transition.Group>
-                                        {character.appearance &&
+                                        {character.appearance.name &&
                                         <Grid.Column>
-                                            <Message>
-                                                {character.appearance}
+                                            <Message color={'yellow'}>
+                                                {character.appearance.name}
                                             </Message>
                                         </Grid.Column>
                                         }
