@@ -61,6 +61,26 @@ export const translations = {
                         hair: {
                             name: "appearance:menu.main.creator.appearance.hair.name"
                         }
+                    },
+                    origins:{
+                        name: {
+                            name: "origins:menu.main.creator.origins.name.name",
+                            surname: "origins:menu.main.creator.origins.name.surname"
+                        },
+                        signs:{
+                            name: "origins:menu.main.creator.origins.star.signs.name",
+                            default: "origins:menu.main.creator.origins.star.signs",
+                        },
+                        age:{
+                            name: "origins:menu.main.creator.origins.age.name",
+                        },
+                        siblings:{
+                            name: "origins:menu.main.creator.origins.siblings.name",
+                        },
+                        birthplace:{
+                            name: "origins:menu.main.creator.origins.birthplace.name",
+                            default: "origins:menu.main.creator.origins.birthplace.places",
+                        }
                     }
                 }
             }

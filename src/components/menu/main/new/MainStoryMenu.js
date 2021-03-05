@@ -7,6 +7,8 @@ import GenderTab from "./character/creator/GenderTab";
 import "../../../../styles/menu/main/MainPlotMenu.css"
 import RaceTab from "./character/creator/RaceTab";
 import AppearanceTab from "./character/creator/AppearanceTab";
+import OriginsTab from "./character/creator/OriginsTab";
+import ProfessionTab from "./character/creator/ProfessionTab";
 
 const characterTemplate = {
     gender: undefined,
@@ -20,7 +22,14 @@ const characterTemplate = {
         hair: undefined,
         eyes: undefined,
     },
-    origins: undefined,
+    origins: {
+        name: undefined,
+        surname: undefined,
+        age: undefined,
+        star: undefined,
+        siblings: undefined,
+        birthplace: undefined,
+    },
     profession: undefined,
     characteristics: undefined,
     skills: undefined,
@@ -108,6 +117,12 @@ export default function MainStoryMenu() {
                                     }
                                     {activeItem === tabs[3].name &&
                                     <Grid.Column width={16} textAlign={"center"} className={'stories-menu-title'}>
+                                        <OriginsTab origins={character.origins} race={character.race} tab={tabs[4]} handleDecision={setCharacterProperty}/>
+                                    </Grid.Column>
+                                    }
+                                    {activeItem === tabs[4].name &&
+                                    <Grid.Column width={16} textAlign={"center"} className={'stories-menu-title'}>
+                                        <ProfessionTab origins={character.profession} race={character.race} tab={tabs[5]} handleDecision={setCharacterProperty}/>
                                     </Grid.Column>
                                     }
                                     {/*<Grid.Column width={10} textAlign={"center"} className={'stories-menu-title'}>*/}
@@ -187,10 +202,10 @@ export default function MainStoryMenu() {
                                             </Message>
                                         </Grid.Column>
                                         }
-                                        {character.origins &&
+                                        {character.origins.name && character.origins.surname &&
                                         <Grid.Column>
                                             <Message>
-                                                {character.origins}
+                                                {character.origins.name + " " + character.origins.surname}
                                             </Message>
                                         </Grid.Column>
                                         }

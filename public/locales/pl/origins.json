@@ -1,0 +1,48 @@
+{
+  "menu": {
+    "main": {
+      "creator": {
+        "origins": {
+          "name": {
+            "name": "First Name",
+            "surname": "Second Name"
+          },
+          "star": {
+            "name": "Star Sign",
+            "signs": {
+              "wymenos": "Wymund the Anchorite",
+              "azurios": "The Big Cross",
+              "verros": "The Limner's Line",
+              "nuthios": "Gnuthus the Ox",
+              "draknos": "Dragomas the Drake",
+              "tarotes": "The Gloaming",
+              "gileon": "Grungni's Baldric",
+              "mammius": "Mammit the Wise",
+              "mammios": "Mummit the Fool",
+              "hashoor": "The Two Bullocks",
+              "adamnos": "The Dancer",
+              "lupios": "The Drummer",
+              "sangist": "The Piper",
+              "vobist": "Vobist the Faint",
+              "kharnos": "The Broken Cart",
+              "talios": "The Greased Goat",
+              "rioneyes": "Rhya's Cauldron",
+              "kakeros": "Cacklefax the Cockerel",
+              "alyoi": "The Bone Saw (Grimoire)",
+              "solkios": "The Witchling Star"
+            }
+          },
+          "age": {
+            "name": "Age"
+          },
+          "siblings": {
+            "name": "Siblings"
+          },
+          "birthplace": {
+            "name": "Birthplace"
+          }
+        }
+      }
+    }
+  }
+}
