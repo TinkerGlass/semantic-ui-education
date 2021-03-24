@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import {Container, Grid, Menu, Message, Transition} from "semantic-ui-react";
-import {useTranslation} from "react-i18next";
 import MainItem from "./MainItem";
 import {tabs} from "../../../../constants/main/MenuTabs";
 import GenderTab from "./character/creator/GenderTab";
@@ -37,7 +36,6 @@ const characterTemplate = {
 };
 
 export default function MainStoryMenu() {
-    const { t } = useTranslation();
 
     const [character, setCharacter] = useState(characterTemplate);
     const [visible, setVisible] = useState(false);

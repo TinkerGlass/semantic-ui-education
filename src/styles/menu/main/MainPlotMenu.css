@@ -52,6 +52,13 @@
     overflow: auto;
 }
 
+.profession-list-body {
+    height: 80%;
+    width: content-box;
+    display: block;
+    overflow: auto;
+}
+
 .characteristics-table-body {
     display: block;
     height: 135px;
